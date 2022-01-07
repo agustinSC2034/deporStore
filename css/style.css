@@ -53,6 +53,9 @@ nav{
     align-items: center;
     justify-content: space-between ;
     margin-top: 10px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+    
 }
 
 nav label {
@@ -110,16 +113,22 @@ nav ul li a {
     color: white;
     text-align: center;
     gap: 20px;
+    animation: fadeInUp;
+    animation-duration: 2s;
+    position: absolute;
 }
-.titulo h3{
-    font-size: 50px;
-    font-weight: bold;
+.titulo h2{
+    font-size: 3.60rem;
+	letter-spacing: -2px;
+	text-transform: none;
+    font-family: 'Karla', sans-serif;
+    
 }
 .titulo p{
     border: 20px;
     line-height: 50px;
     font-size: 18px;
-    font-weight: bold;
+    font-family: 'Karla', sans-serif;
 }
 
 .botonesHome {
@@ -129,16 +138,16 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    
 }
 
 .botonesHome input {
     height: 50px;
     width: 170px;
     border: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 .botonesHome input:hover{
@@ -154,6 +163,8 @@ nav ul li a {
     width: 100%;
     justify-content: center;
     align-items: center;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 .texto-menu {
@@ -164,16 +175,24 @@ nav ul li a {
     text-align: center;
     width: 750px;
     margin-top: 70px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 .texto-menu h3{
     font-size: 28px;
     color: #333;
+    animation: bounceIn;
+    animation-duration: 1s;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 .texto-menu p{
     font-size: 18px;
     margin-top: 25px;
     color: #333;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 
@@ -186,12 +205,16 @@ nav ul li a {
     width: 100%;
     justify-content: center;
     gap: 30px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 0.5px;
 }
 
 .container-cards{
     height: 420px;
     width: 330px;
     box-shadow: 0 0 7px #111;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 .card img{
     margin: auto;
@@ -222,10 +245,11 @@ nav ul li a {
     height: 50px;
     width: 85%;
     margin: auto;
-    font-family: sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 0.5px;
 }
 .box-precio{
     width: 80px;
@@ -235,26 +259,23 @@ nav ul li a {
     color: red;
     font-size: .8em;
     text-decoration: line-through;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 0.5px;
 }
 .precio2{
     font-size: 1.7em;
-}
-.carrito{
-    font-size: 1.5em;
-    font-family: sans-serif;
-    color: #555;
-    float: right;
 }
 
 .boton-carrito input {
     height: 40px;
     width: 100px;
     border: none;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     background-color: black;
     color: white;
     font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 /* /* HOME: Seccion de slider */
@@ -264,7 +285,9 @@ nav ul li a {
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    height: 150px;
+    height: 250px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 .textoSlider h3{
@@ -290,11 +313,13 @@ nav ul li a {
 
 .newsletterContenedor {
     display: flex;
-    height: 200px;
+    height: 350px;
     width: 100%;
     justify-content: center;
     text-align: center;
     align-items: center;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 .newsletter {
@@ -315,6 +340,8 @@ nav ul li a {
     border-top: none;
     border-right: none;
     border-left: none;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 .newsletter .button {
@@ -328,6 +355,8 @@ nav ul li a {
     border-right: none;
     border-left: none;
     border-bottom: none;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 /* Footer general */
@@ -337,10 +366,15 @@ footer{
     height: 20vh;
     width: 100%;
     color: white;
-    font-family: monospace;
     justify-content: center;
     text-align: center;
     align-items: flex-end;
+}
+
+footer .footerText {
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
 /*CATEGORIAS Y MARCAS*/
@@ -449,6 +483,8 @@ footer{
     width: 100%;
     justify-content: center;
     align-items: center;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 .texto-menu2 {
@@ -458,12 +494,13 @@ footer{
     align-items: center;
     text-align: center;
     width: 70%;
-
 }
 
 .texto-menu2 h3 {
     font-size: 28px;
     color: #333;
+    animation: bounceIn;
+    animation-duration: 1s;
 }
 
 .paginas {
@@ -474,10 +511,14 @@ footer{
     align-items: center;
     margin-top: 40px;
     font-size: 15px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 .paginas p{
     display: flex;
     padding: 15px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 .paginas p a:hover {
@@ -489,8 +530,7 @@ footer{
     display: flex;
     width: 100%;
     height: 230px;
-    margin-top: 0px;
-    margin-bottom: 50px;
+    margin-top: 100px;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -509,6 +549,13 @@ footer{
 .containerInfo .info h3{
     font-size: 22px;
     padding-bottom: 5%;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+}
+
+.containerInfo .info p{
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 0.5px;
 }
 
 /* NOSOTROS */
@@ -588,46 +635,6 @@ footer{
     align-items: center;
 }
 
-.textoNosotros {      
-    display: flex;
-    flex-wrap: wrap;
-    height: 250px;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 70px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.textoNosotrosInside {
-    display: flex;
-    flex-wrap: wrap;
-    height: 200px;
-    width: 70%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.textoNosotrosInside h3{
-    display: flex;
-    font-size: 25px;
-    color: #333;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    
-}
-.textoNosotrosInside p{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: #333;
-}
 
 .redesSocialesContainer{
     display: flex;
@@ -650,7 +657,7 @@ footer{
 }
 
 .redesSocialesTitulo h1{
-    margin-top: 50px;
+    margin-top: 120px;
     text-align: center;
     font-size: 22px;
 }
@@ -725,6 +732,8 @@ footer{
     margin-bottom: -12%;
     margin-top: 5%;
     width: 100%;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
 }
 
 .tituloContact {
@@ -905,7 +914,6 @@ footer{
     
 
 
-
     /* NEWSLETTER GENERAL*/
     
     .newsletterContenedor {
@@ -963,32 +971,7 @@ footer{
     
     /* NOSOTROS NAV */
 
-    .menu2{
-        display: flex;
-        height: 60px;
-        width: 98%;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 10px;
-        background: white(5, 0, 0);
-    }
     
-    .menu2 label {
-        color: white;
-    }
-    
-    .menu2:hover {
-        background: none;
-    }
-    
-    .menu2 ul li a {
-        color: white;
-        font-size: 11.5px;
-    }
-    
-    .logoNosotros{
-        display: none;
-    }
 
     /* CONTAINER REDES SOCIALES*/
     
