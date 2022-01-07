@@ -159,7 +159,7 @@ nav ul li a {
 
 .textoMenuContainer {
     display: flex;
-    height: 250px;
+    height: 400px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -174,9 +174,10 @@ nav ul li a {
     align-items: center;
     text-align: center;
     width: 750px;
-    margin-top: 70px;
     font-family: 'Karla', sans-serif;
     letter-spacing: 1px;
+
+
 }
 
 .texto-menu h3{
@@ -494,6 +495,8 @@ footer .footerText {
     align-items: center;
     text-align: center;
     width: 70%;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 .texto-menu2 h3 {
@@ -529,11 +532,11 @@ footer .footerText {
 .containerInfo {
     display: flex;
     width: 100%;
-    height: 230px;
-    margin-top: 100px;
+    height: 300px;
     justify-content: center;
     text-align: center;
     align-items: center;
+    background: aqua;
 }
 
 .containerInfoInside {
@@ -582,6 +585,9 @@ footer .footerText {
     align-items: center;
     margin-top: 10px;
     background: white(5, 0, 0);
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+    
 }
 
 .menu2 label {
@@ -613,6 +619,8 @@ footer .footerText {
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 .fondoNosotros{
@@ -628,6 +636,7 @@ footer .footerText {
     border-top: none;
     border-right: none;
     height: 40vh;
+    
 }
 .logoNosotros{
     display: flex;
@@ -635,15 +644,51 @@ footer .footerText {
     align-items: center;
 }
 
+.containerInfoNosotros {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+}
+
+.containerInfoInsideNosotros {
+    display: flex;
+    width: 80%;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.containerInfoInsideNosotros .info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 
 .redesSocialesContainer{
     display: flex;
     justify-content: center;
-    height: 210px;
+    height: 350px;
     width: 100%;
-    margin-top: 50px;
     align-items: center;
-    margin-bottom: 60px;
+}
+
+.redesSocialesContainer .containerSocial {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+    font-size: 13px;
 }
 
 .redesSocialesContainerInside{
@@ -654,15 +699,7 @@ footer .footerText {
     align-items: center;
     gap: 90px;
     
-}
-
-.redesSocialesTitulo h1{
-    margin-top: 120px;
-    text-align: center;
-    font-size: 22px;
-}
-.redesSocialesTitulo h1 span{
-    color: rgb(43, 33, 117);
+    
 }
 
 .logoSocial{
@@ -679,23 +716,29 @@ footer .footerText {
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
-    height: 200px;
-    width: 180px;
+    height: 120px;
+    width: 120px;
 }
 
 .titulo{
     text-align: center;
     color: white;
     padding: 25vh 0;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 .titulo h3{
     font-size: 50px;
     font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 .titulo p{
     border: 20px;
     line-height: 50px;
     font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 
@@ -717,10 +760,14 @@ footer .footerText {
     height: 60px;
     width: 100%;
     text-align: center;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 .textoContacto h3{
     font-size: 25px;
     color: #333;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
     
 }
 
@@ -741,6 +788,8 @@ footer .footerText {
     width: 500px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 17px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 .inputContact {
@@ -757,6 +806,8 @@ footer .footerText {
     border-top: none;
     border-right: none;
     border-left: none;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 .textAreaContact {
@@ -765,6 +816,8 @@ footer .footerText {
 
 .textAreaContact textarea {
     width: 500px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 .buttonsForm{
@@ -775,6 +828,7 @@ footer .footerText {
     height: 100px;
     width: 100%;
     text-align: center;
+    
 }
 .buttonsForm .buttonForm{
     height: 40px;
@@ -787,6 +841,8 @@ footer .footerText {
     border-right: none;
     border-left: none;
     border-bottom: none;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 
@@ -968,8 +1024,25 @@ footer .footerText {
         display: none;
     }
     
+
+     /* CONTAINER TEXTO NOSOTROS*/
+
+     .containerInfoNosotros {
+        display: flex;
+        height: 480px;
+    }
     
-    /* NOSOTROS NAV */
+    .containerInfoInsideNosotros {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    
+    .containerInfoInsideNosotros .info {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 
     
 
@@ -1213,6 +1286,27 @@ footer .footerText {
     .logoNosotros{
         display: none;
     }
+
+
+    /* CONTAINER TEXTO NOSOTROS*/
+
+    .containerInfoNosotros {
+        display: flex;
+        height: 700px;
+    }
+    
+    .containerInfoInsideNosotros {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    
+    .containerInfoInsideNosotros .info {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
 
     /* CONTAINER REDES SOCIALES*/
     
