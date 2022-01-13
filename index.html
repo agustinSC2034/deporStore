@@ -17,28 +17,74 @@
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>DeporStore</title>
 </head>
 
 <body>
-    <div class="gridContainer">
-        <div class="fondoHome">
-            <nav class="menu">
-                <label class="logo" for="">DeporStore</label>
-                <ul>
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="pages/categorias/nba.html">Categorias</a></li>
-                    <li><a href="pages/marcas/nike.html">Marcas</a></li>
-                    <li><a href="pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DeporStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="pages/categorias/nba.html">NBA</a></li>
+                            <li><a class="dropdown-item" href="pages/categorias/nba.html">Accesorios</a></li>
+                            <li><a class="dropdown-item" href="pages/categorias/nba.html">Conjuntos futbol</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Marcas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="pages/marcas/nike.html">Nike</a></li>
+                            <li><a class="dropdown-item" href="pages/marcas/nike.html">Puma</a></li>
+                            <li><a class="dropdown-item" href="pages/marcas/nike.html">Adidas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
 
-            <div class="containerHome">
-                <div class="titulo">
-                    <h2>Nuevos Conjuntos 2021</h2>
-                    <p>Todo a un click de distancia</p>
+            <div class="carousel-item active">
+                <img src="img/1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1>DeporStore</h1>
+                    <h5>tu indumentaria en un solo lugar</h5>
                     <div class="botonesHome">
                         <a href="#ofertas">
                             <input type="button" value="OFERTAS">
@@ -48,171 +94,222 @@
                         </a>
                     </div>
                 </div>
-
+            </div>
+            <div class="carousel-item">
+                <img src="img/1017dailynexusnba-1-1024x433.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1>Conjuntos de la NBA</h1>
+                    <h5>LLegaron las equipaciones de la temporada 2022</h5>
+                    <div class="botonesHome">
+                        <a href="#ofertas">
+                            <input type="button" value="OFERTAS">
+                        </a>
+                        <a href="pages/contacto.html">
+                            <input type="button" value="CONTACTANOS">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/ebay-nike-dunk-sponsored-dunk-banner-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1>Nuevas zapatillas Nike airMax790</h1>
+                    <h5>Edicion especial</h5>
+                    <div class="botonesHome">
+                        <a href="#ofertas">
+                            <input type="button" value="OFERTAS">
+                        </a>
+                        <a href="pages/contacto.html">
+                            <input type="button" value="CONTACTANOS">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="menu">
-            <div class="textoMenuContainer">
-                <div class="texto-menu">
-                    <a name="ofertas">
-                        <h3>Ofertas de la semana</h3>
-                    </a>
-                    <p>Acá encontraras las ofertas semanales, todas las semanas se renuevan. Lorem ipsum dolor sit
-                        amet
-                        consectetur adipisicing elit. Repudiandae quia est aperiam minus quis cum, officiis qui amet
-                        consequuntur accusamus, cupiditate, eius asperiores numquam totam?</p>
-                </div>
-            </div>
-
-            <div class="displayContainer">
-                <div class="container-cards">
-                    <div class="card">
-                        <img src="img/psg.png" alt="">
-                    </div>
-                    <div class="info-card">
-                        <h1>Camiseta PSG titular</h1>
-                    </div>
-                    <div class="precio">
-                        <div class="box-precio">
-                            <span class="precio1">$9999</span>
-                            <span class="precio2"><b>$7800</b></span>
-                        </div>
-                        <div class="boton-carrito">
-                            <a href="">
-                                <input type="button" value="COMPRAR">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container-cards">
-                    <div class="card">
-                        <img src="img/manU.png" alt="">
-                    </div>
-                    <div class="info-card">
-                        <h1>Camiseta Man United titular</h1>
-                    </div>
-                    <div class="precio">
-                        <div class="box-precio">
-                            <span class="precio1">$9999</span>
-                            <span class="precio2"><b>$7800</b></span>
-                        </div>
-                        <div class="boton-carrito">
-                            <a href="">
-                                <input type="button" value="COMPRAR">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container-cards">
-                    <div class="card">
-                        <img src="img/river.png" alt="">
-                    </div>
-                    <div class="info-card">
-                        <h1>Camiseta River titular</h1>
-                    </div>
-                    <div class="precio">
-                        <div class="box-precio">
-                            <span class="precio1">$9999</span>
-                            <span class="precio2"><b>$7800</b></span>
-                        </div>
-                        <div class="boton-carrito">
-                            <a href="">
-                                <input type="button" value="COMPRAR">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="displayContainer">
-                <div class="container-cards">
-                    <div class="card">
-                        <img src="img/nikeBotines.jpg" alt="">
-                    </div>
-                    <div class="info-card">
-                        <h1>Botines Nike</h1>
-                    </div>
-                    <div class="precio">
-                        <div class="box-precio">
-                            <span class="precio1">$9999</span>
-                            <span class="precio2"><b>$7800</b></span>
-                        </div>
-                        <div class="boton-carrito">
-                            <a href="">
-                                <input type="button" value="COMPRAR">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container-cards">
-                    <div class="card">
-                        <img src="img/adidasBotines.jpg" alt="">
-                    </div>
-                    <div class="info-card">
-                        <h1>Botines Adidas</h1>
-                    </div>
-                    <div class="precio">
-                        <div class="box-precio">
-                            <span class="precio1">$9999</span>
-                            <span class="precio2"><b>$7800</b></span>
-                        </div>
-                        <div class="boton-carrito">
-                            <a href="">
-                                <input type="button" value="COMPRAR">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container-cards">
-                    <div class="card">
-                        <img src="img/pumaBotines.jpg" alt="">
-                    </div>
-                    <div class="info-card">
-                        <h1>Botines Puma</h1>
-                    </div>
-                    <div class="precio">
-                        <div class="box-precio">
-                            <span class="precio1">$9999</span>
-                            <span class="precio2"><b>$7800</b></span>
-                        </div>
-                        <div class="boton-carrito">
-                            <a href="">
-                                <input type="button" value="COMPRAR">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="sliderContenedor">
-                <div class="textoSlider">
-                    <h3>Nuestras marcas</h3>
-                    <p>Acá iria un slider con imagenes</p>
-                </div>
-            </div>
-            <div class="slider">
-            </div>
-
-
-            <div class="newsletterContenedor">
-                <div class="newsletter">
-                    <h1>Suscribite para recibir ofertas increíbles en tu email</h1>
-                    <input class="email" type="email" , id="email" , placeholder="Ingrese su email" , required>
-                    <input class="button" type="button" value="Enviar">
-                </div>
-            </div>
-        </div>
-        <footer>
-            <div class="footerText">
-                <p>Copyrights AgustinSC</p>
-            </div>
-        </footer>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+
+
+    <div class="menuIndex">
+        <div class="textoMenuContainer">
+            <div class="texto-menu">
+                <a name="ofertas">
+                    <h3>Ofertas de la semana</h3>
+                </a>
+                <p>Acá encontraras las ofertas semanales, todas las semanas se renuevan. Lorem ipsum dolor sit
+                    amet
+                    consectetur adipisicing elit. Repudiandae quia est aperiam minus quis cum, officiis qui amet
+                    consequuntur accusamus, cupiditate, eius asperiores numquam totam?</p>
+            </div>
+        </div>
+
+        <div class="displayContainer">
+              <div class="card" style="width: 18rem;">
+                <div class="card">
+                    <img src="img/psg.png" alt="">
+                </div>
+                <div class="info-card">
+                    <h1>Camiseta PSG titular</h1>
+                </div>
+                <div class="precio">
+                    <div class="box-precio">
+                        <span class="precio1">$9999</span>
+                        <span class="precio2"><b>$7800</b></span>
+                    </div>
+                    <div class="boton-carrito">
+                        <a href="">
+                            <button type="button" class="btn btn-outline-dark">Comprar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card">
+                    <img src="img/manU.png" alt="">
+                </div>
+                <div class="info-card">
+                    <h1>Camiseta Man United titular</h1>
+                </div>
+                <div class="precio">
+                    <div class="box-precio">
+                        <span class="precio1">$9999</span>
+                        <span class="precio2"><b>$7800</b></span>
+                    </div>
+                    <div class="boton-carrito">
+                        <a href="">
+                            <button type="button" class="btn btn-outline-dark">Comprar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card">
+                    <img src="img/river.png" alt="">
+                </div>
+                <div class="info-card">
+                    <h1>Camiseta River titular</h1>
+                </div>
+                <div class="precio">
+                    <div class="box-precio">
+                        <span class="precio1">$9999</span>
+                        <span class="precio2"><b>$7800</b></span>
+                    </div>
+                    <div class="boton-carrito">
+                        <a href="">
+                            <button type="button" class="btn btn-outline-dark">Comprar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="displayContainer">
+            <div class="card" style="width: 18rem;">
+                <div class="card">
+                    <img src="img/nikeBotines.jpg" alt="">
+                </div>
+                <div class="info-card">
+                    <h1>Botines Nike</h1>
+                </div>
+                <div class="precio">
+                    <div class="box-precio">
+                        <span class="precio1">$9999</span>
+                        <span class="precio2"><b>$7800</b></span>
+                    </div>
+                    <div class="boton-carrito">
+                        <a href="">
+                            <button type="button" class="btn btn-outline-dark">Comprar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card">
+                    <img src="img/adidasBotines.jpg" alt="">
+                </div>
+                <div class="info-card">
+                    <h1>Botines Adidas</h1>
+                </div>
+                <div class="precio">
+                    <div class="box-precio">
+                        <span class="precio1">$9999</span>
+                        <span class="precio2"><b>$7800</b></span>
+                    </div>
+                    <div class="boton-carrito">
+                        <a href="">
+                            <button type="button" class="btn btn-outline-dark">Comprar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card">
+                    <img src="img/pumaBotines.jpg" alt="">
+                </div>
+                <div class="info-card">
+                    <h1>Botines Puma</h1>
+                </div>
+                <div class="precio">
+                    <div class="box-precio">
+                        <span class="precio1">$9999</span>
+                        <span class="precio2"><b>$7800</b></span>
+                    </div>
+                    <div class="boton-carrito">
+                        <a href="">
+                            <button type="button" class="btn btn-outline-dark">Comprar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sliderContenedor">
+            <div class="textoSlider">
+                <h3>Nuestras marcas</h3>
+                <p>Acá iria un slider con imagenes</p>
+            </div>
+        </div>
+        <div class="slider">
+        </div>
+
+
+        <div class="newsletterContenedor">
+            <div class="newsletter">
+                <h1>Suscribite para recibir ofertas increíbles en tu email</h1>
+                <div class="mb-3">
+                    <div class="inputContactNewsletter">
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                            <button type="button" class="btn btn-outline-dark">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <footer>
+        <div class="footerText">
+            <p>Copyrights AgustinSC</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

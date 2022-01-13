@@ -18,32 +18,71 @@
         href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600&family=Lato&family=Montserrat:wght@500;900&family=Open+Sans&family=Shizuru&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>DeporStore</title>
 </head>
 
 <body>
-    <div class="gridContainer2">
-        <div class="fondoMarcasNike">
-            <nav class="menu">
-                <label class="logo" for="">DeporStore</label>
-                <ul>
-                    <li class="active"><a href="../../index.html">Home</a></li>
-                    <li><a href="../categorias/nba.html">Categorias</a></li>
-                    <li><a href="../marcas/nike.html">Marcas</a></li>
-                    <li><a href="../nosotros.html">Nosotros</a></li>
-                    <li><a href="../contacto.html">Contacto</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DeporStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../categorias/nba.html">NBA</a></li>
+                            <li><a class="dropdown-item" href="../categorias/nba.html">Accesorios</a></li>
+                            <li><a class="dropdown-item" href="../categorias/nba.html">Conjuntos futbol</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Marcas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../marcas/nike.html">Nike</a></li>
+                            <li><a class="dropdown-item" href="../marcas/nike.html">Puma</a></li>
+                            <li><a class="dropdown-item" href="../marcas/nike.html">Adidas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contacto.html">Contacto</a>
+                    </li>
                 </ul>
-            </nav>
-
+            </div>
         </div>
+    </nav>
 
-
-        <div class="menu">
-            <div class="textoMenuContainer2">
-                <div class="texto-menu2">
-                    <h3 class="tituloCategoriasMarcas">Lo mejor en indumentaria NIKE</h3>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="fondoNike">
+                    <div class="carousel-caption">
+                        <h1>NIKE</h1>
+                        <h5>Los nuevos modelos ya disponibles!</h5>
+                    </div>
                 </div>
-            </div>
+                
+            </div> 
+        </div>
+    </div>
 
 
             <div class="displayContainer">
@@ -61,7 +100,7 @@
                         </div>
                         <div class="boton-carrito">
                             <a href="">
-                                <input type="button" value="COMPRAR">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
                             </a>
                         </div>
                     </div>
@@ -81,7 +120,7 @@
                         </div>
                         <div class="boton-carrito">
                             <a href="">
-                                <input type="button" value="COMPRAR">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
                             </a>
                         </div>
                     </div>
@@ -101,68 +140,7 @@
                         </div>
                         <div class="boton-carrito">
                             <a href="">
-                                <input type="button" value="COMPRAR">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="displayContainer">
-                <div class="container-cards">
-                    <div class="card">
-                        <img src="../../img/nikeBotines.jpg" alt="">
-                    </div>
-                    <div class="info-card">
-                        <h1>Botines Nike Mercury</h1>
-                    </div>
-                    <div class="precio">
-                        <div class="box-precio">
-
-                            <span class="precio2"><b>$7800</b></span>
-                        </div>
-                        <div class="boton-carrito">
-                            <a href="">
-                                <input type="button" value="COMPRAR">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container-cards">
-                    <div class="card">
-                        <img src="../../img/nikegorra.jpg" alt="">
-                    </div>
-                    <div class="info-card">
-                        <h1>Gorra Nike Roja </h1>
-                    </div>
-                    <div class="precio">
-                        <div class="box-precio">
-
-                            <span class="precio2"><b>$7800</b></span>
-                        </div>
-                        <div class="boton-carrito">
-                            <a href="">
-                                <input type="button" value="COMPRAR">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container-cards">
-                    <div class="card">
-                        <img src="../../img/nike.jpg" alt="">
-                    </div>
-                    <div class="info-card">
-                        <h1>Camiseta Nike clasica</h1>
-                    </div>
-                    <div class="precio">
-                        <div class="box-precio">
-
-                            <span class="precio2"><b>$7800</b></span>
-                        </div>
-                        <div class="boton-carrito">
-                            <a href="">
-                                <input type="button" value="COMPRAR">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
                             </a>
                         </div>
                     </div>
@@ -183,7 +161,7 @@
                         </div>
                         <div class="boton-carrito">
                             <a href="">
-                                <input type="button" value="COMPRAR">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
                             </a>
                         </div>
                     </div>
@@ -203,7 +181,7 @@
                         </div>
                         <div class="boton-carrito">
                             <a href="">
-                                <input type="button" value="COMPRAR">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
                             </a>
                         </div>
                     </div>
@@ -223,7 +201,7 @@
                         </div>
                         <div class="boton-carrito">
                             <a href="">
-                                <input type="button" value="COMPRAR">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
                             </a>
                         </div>
                     </div>
@@ -244,7 +222,7 @@
                         </div>
                         <div class="boton-carrito">
                             <a href="">
-                                <input type="button" value="COMPRAR">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
                             </a>
                         </div>
                     </div>
@@ -264,7 +242,7 @@
                         </div>
                         <div class="boton-carrito">
                             <a href="">
-                                <input type="button" value="COMPRAR">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
                             </a>
                         </div>
                     </div>
@@ -284,7 +262,7 @@
                         </div>
                         <div class="boton-carrito">
                             <a href="">
-                                <input type="button" value="COMPRAR">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
                             </a>
                         </div>
                     </div>
@@ -305,7 +283,7 @@
                         </div>
                         <div class="boton-carrito">
                             <a href="">
-                                <input type="button" value="COMPRAR">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
                             </a>
                         </div>
                     </div>
@@ -325,7 +303,7 @@
                         </div>
                         <div class="boton-carrito">
                             <a href="">
-                                <input type="button" value="COMPRAR">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
                             </a>
                         </div>
                     </div>
@@ -345,24 +323,94 @@
                         </div>
                         <div class="boton-carrito">
                             <a href="">
-                                <input type="button" value="COMPRAR">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="displayContainer">
+                <div class="container-cards">
+                    <div class="card">
+                        <img src="../../img/nikeBotines.jpg" alt="">
+                    </div>
+                    <div class="info-card">
+                        <h1>Botines Nike Mercury</h1>
+                    </div>
+                    <div class="precio">
+                        <div class="box-precio">
+
+                            <span class="precio2"><b>$7800</b></span>
+                        </div>
+                        <div class="boton-carrito">
+                            <a href="">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards">
+                    <div class="card">
+                        <img src="../../img/nikegorra.jpg" alt="">
+                    </div>
+                    <div class="info-card">
+                        <h1>Gorra Nike Roja </h1>
+                    </div>
+                    <div class="precio">
+                        <div class="box-precio">
+
+                            <span class="precio2"><b>$7800</b></span>
+                        </div>
+                        <div class="boton-carrito">
+                            <a href="">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-cards">
+                    <div class="card">
+                        <img src="../../img/nike.jpg" alt="">
+                    </div>
+                    <div class="info-card">
+                        <h1>Camiseta Nike clasica</h1>
+                    </div>
+                    <div class="precio">
+                        <div class="box-precio">
+
+                            <span class="precio2"><b>$7800</b></span>
+                        </div>
+                        <div class="boton-carrito">
+                            <button type="button" class="btn btn-outline-dark">Comprar</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="paginas">
-                <p><a href="#">1</a></p>
-                <p><a href="#">2</a></p>
-                <p><a href="#">3</a></p>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                    </ul>
+                  </nav>
             </div>
 
 
             <div class="newsletterContenedor">
                 <div class="newsletter">
                     <h1>Suscribite para recibir ofertas increíbles en tu email</h1>
-                    <input class="email" type="email" , id="email" , placeholder="Ingrese su email" , required>
-                    <input class="button" type="button" value="Enviar">
+                    <div class="mb-3">
+                        <div class="inputContactNewsletter">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                                <button type="button" class="btn btn-outline-dark">Enviar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -382,13 +430,16 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
         <footer>
             <div class="footerText" >
                 <p>Copyrights AgustinSC</p>
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

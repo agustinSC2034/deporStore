@@ -6,160 +6,66 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif; /*Cambiar fuente*/
-}
-
-/* GRID */
-
-.gridContainer {
-    display: grid;
-    height: auto;
-    grid-template-rows: 100vh auto 20vh;
-    grid-template-areas: 
-    "fondo"
-    "menu"
-    "footer";
-}
-
-.fondoHome {
-    grid-area: fondo;
-}
-.menu {
-    grid-area: menu;
-}
-footer {
-    grid-area: footer;
-}
-
 /* HOME */
 
-.fondoHome {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: url(../img/fondo.jpg);
-    background-color: rgba(45, 45, 45, 0.7);
-    background-blend-mode: soft-light;    
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-nav{
-    display: flex;
-    height: 60px;
-    width: 98%;
-    align-items: center;
-    justify-content: space-between ;
-    margin-top: 10px;
-    font-family: 'Karla', sans-serif;
-    letter-spacing: 1px;
-    
-}
-
-nav label {
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
-    margin-left: 15px;
-}
-
-
-nav:hover {
-    background: white;
-    transition: .5s;
-    color: black;
-}
-
-nav:hover a {
-    color: black;
-}
-
-nav:hover label {
-    color: black;
-}
-
-nav ul {
-    display: flex;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0px 6px;
-}
-nav ul li a {
-    color: white;
-    font-weight: bold;
-    font-size: 13px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-
-.containerHome{
+.carousel-inner img {
+    height: 92.5vh;
+    width: 100%;
+     background-blend-mode: soft-light;    
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+ 
+ .carousel-caption {
     display: flex;
     flex-direction: column;
-    height: 90vh;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-.titulo{
-    display: flex;
-    flex-direction: column;
-    color: white;
+    color: #fff;
     text-align: center;
-    gap: 20px;
-    animation: fadeInUp;
-    animation-duration: 2s;
-    position: absolute;
-}
-.titulo h2{
-    font-size: 3.60rem;
-	letter-spacing: -2px;
-	text-transform: none;
-    font-family: 'Karla', sans-serif;
-    
-}
-.titulo p{
-    border: 20px;
-    line-height: 50px;
-    font-size: 18px;
-    font-family: 'Karla', sans-serif;
-}
-
-.botonesHome {
-    display: flex;
-    width: 100%;
-    height: 40px;
+    height: 60%;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
+   
+ }
+ 
+ .botonesHome {
+   display: flex;
+   width: 100%;
+   height: 40px;
+   padding-top: 40px;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+ }
+ 
+ .botonesHome input {
+   height: 50px;
+   width: 170px;
+   border: none;
+   font-size: 16px;
+   font-weight: bold;
+   font-family: 'Karla', sans-serif;
+   letter-spacing: 1px;
+ }
+ 
+ .botonesHome input:hover{
+   background: rgb(25, 24, 24);
+   color: white;
+ }
 
-.botonesHome input {
-    height: 50px;
-    width: 170px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: 'Karla', sans-serif;
-    letter-spacing: 1px;
-}
-
-.botonesHome input:hover{
-    background: rgb(25, 24, 24);
-    color: white;
-}
 
 /* HOME: Seccion de ofertas*/
 
+.menuIndex {
+    width: 100%;
+    height: 1900px;
+    display: flex;
+    flex-direction: column;
+}
+
 .textoMenuContainer {
     display: flex;
-    height: 400px;
+    height: 300px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -176,8 +82,6 @@ nav ul li a {
     width: 750px;
     font-family: 'Karla', sans-serif;
     letter-spacing: 1px;
-
-
 }
 
 .texto-menu h3{
@@ -209,21 +113,13 @@ nav ul li a {
     font-family: 'Karla', sans-serif;
     letter-spacing: 0.5px;
 }
-
-.container-cards{
-    height: 420px;
-    width: 330px;
-    box-shadow: 0 0 7px #111;
-    font-family: 'Karla', sans-serif;
-    letter-spacing: 1px;
-}
 .card img{
     margin: auto;
     display: block;
-    height: 300px;
-    width: 300px;
+    height: 280px;
+    width: 280px;
     margin: 0px 10px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 .info-card{
     display: flex;
@@ -231,14 +127,11 @@ nav ul li a {
     width: 100%;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
-
-
 .info-card h1{
-    font-family: sans-serif;
-    font-size: 1.3em;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.0em;
     text-align: center;
     color: #333;
 }
@@ -255,6 +148,8 @@ nav ul li a {
 .box-precio{
     width: 80px;
     margin: 10px 15px;
+    display: flex;
+    flex-direction: column;
 }
 .precio1{
     color: red;
@@ -264,7 +159,7 @@ nav ul li a {
     letter-spacing: 0.5px;
 }
 .precio2{
-    font-size: 1.7em;
+    font-size: 1.3em;
 }
 
 .boton-carrito input {
@@ -307,14 +202,13 @@ nav ul li a {
     width: 100%;
     margin: 0px 0px;
     background: lightskyblue;
-
 }
 
 /* HOME: Seccion de Newsletter */
 
 .newsletterContenedor {
     display: flex;
-    height: 350px;
+    height: 400px;
     width: 100%;
     justify-content: center;
     text-align: center;
@@ -325,11 +219,16 @@ nav ul li a {
 
 .newsletter {
     height: 150px;
-    margin-top: 70px;
 }
 
 .newsletter h1 {
     font-size: 25px;
+}
+
+.inputContactNewsletter {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .newsletter .email {
@@ -347,7 +246,7 @@ nav ul li a {
 
 .newsletter .button {
     height: 30px;
-    width: 8%;
+    width: 70px;
     margin: 0px -10px;
     font-weight: bold;
     background:  rgb(27, 24, 24);
@@ -364,7 +263,7 @@ nav ul li a {
 footer{
     display: flex;
     background-color: rgb(27, 24, 24);
-    height: 20vh;
+    height: 25vh;
     width: 100%;
     color: white;
     justify-content: center;
@@ -378,24 +277,13 @@ footer .footerText {
     margin-bottom: 15px;
 }
 
+
 /*CATEGORIAS Y MARCAS*/
 
-.gridContainer2 {
-    display: grid;
-    height: auto;
-    grid-template-rows: 50vh auto 20vh;
-    grid-template-areas: 
-    "fondo2"
-    "menu"
-    "footer";
-}
-
-.fondoCategoriasMarcas {
-    grid-area: fondo2;
-}
-
-.fondoCategoriasAccesorios {
+.fondoNba {
     display: flex;
+    width: 100%;
+    height: 50vh;
     flex-wrap: wrap;
     justify-content: center;
     background: url(../img/leaguev3.jpeg);
@@ -406,68 +294,10 @@ footer .footerText {
     background-repeat: no-repeat;
 }
 
-.fondoCategoriasCalzado {
+.fondoNike {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: url(../img/leaguev3.jpeg);
-    background-color: rgba(45, 45, 45, 0.7);
-    background-blend-mode: soft-light;    
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.fondoCategoriasFutbol {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: url(../img/leaguev3.jpeg);
-    background-color: rgba(45, 45, 45, 0.7);
-    background-blend-mode: soft-light;    
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.fondoCategoriasNba{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: url(../img/leaguev3.jpeg);
-    background-color: rgba(45, 45, 45, 0.7);
-    background-blend-mode: soft-light;    
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.fondoMarcasNike {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: url(../img/nikebanner.png);
-    background-color: rgba(45, 45, 45, 0.7);
-    background-blend-mode: soft-light;    
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.fondoMarcasAdidas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: url(../img/nikebanner.png);
-    background-color: rgba(45, 45, 45, 0.7);
-    background-blend-mode: soft-light;    
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.fondoMarcasPuma {
-    display: flex;
+    width: 100%;
+    height: 50vh;
     flex-wrap: wrap;
     justify-content: center;
     background: url(../img/nikebanner.png);
@@ -506,27 +336,22 @@ footer .footerText {
     animation-duration: 1s;
 }
 
+.pagination {
+    font-size: 15px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+}
+
 .paginas {
     display: flex;
     width: 100%;
-    height: 20px;
+    height: 100px;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
     font-size: 15px;
     font-family: 'Karla', sans-serif;
     letter-spacing: 1px;
-}
-.paginas p{
-    display: flex;
-    padding: 15px;
-    font-family: 'Karla', sans-serif;
-    letter-spacing: 1px;
-}
-
-.paginas p a:hover {
-    background: rgb(25, 24, 24);
-    color: white;
 }
 
 .containerInfo {
@@ -563,85 +388,36 @@ footer .footerText {
 
 /* NOSOTROS */
 
-.gridContainer3 {
-    display: grid;
-    height: auto;
-    grid-template-rows: 40vh auto 20vh;
-    grid-template-areas: 
-    "fondo3"
-    "menu"
-    "footer";
-}
-
 .fondoNosotros {
-    grid-area: fondo3;
-}
-
-.menu2{
-    display: flex;
-    height: 60px;
-    width: 98%;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-    background: white(5, 0, 0);
-    font-family: 'Karla', sans-serif;
-    letter-spacing: 1px;
-    
-}
-
-.menu2 label {
-    color: black;
-}
-
-.menu2:hover {
-    background: black;
-    transition: .5s;
-    color: white;
-}
-
-.menu2:hover a {
-    color: white;
-}
-
-.menu2:hover label {
-    color: white;
-}
-
-.menu2 ul li {
-    display: inline-block;
-    margin: 0px 6px;
-}
-.menu2 ul li a {
-    color: black;
-    font-weight: bold;
-    font-size: 13px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    font-family: 'Karla', sans-serif;
-    letter-spacing: 1px;
-}
-
-.fondoNosotros{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-blend-mode: soft-light;    
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgb(255, 255, 255);  
+    align-items: center;
+    
     border-style: solid;
     border-top: none;
     border-right: none;
     height: 40vh;
-    
 }
+
+.menuNosotros {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1200px;
+}
+
 .logoNosotros{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(../img/ds.png);
+    background-blend-mode: soft-light;    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 190px;
+    height: 150px;
 }
 
 .containerInfoNosotros {
@@ -698,8 +474,6 @@ footer .footerText {
     justify-content: center;
     align-items: center;
     gap: 90px;
-    
-    
 }
 
 .logoSocial{
@@ -743,14 +517,12 @@ footer .footerText {
 
 
 /* CONTACTO */
-.gridContainer4 {
-    display: grid;
-    height: auto;
-    grid-template-rows: 40vh auto 28vh;
-    grid-template-areas: 
-    "fondo3"
-    "menu"
-    "footer";
+
+.menu {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
 }
 
 .textoContacto{      
@@ -771,16 +543,27 @@ footer .footerText {
     
 }
 
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuContacto{
+    height: 800px;
+    width: 100%;
+}
+
 .containerContact {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
     height: 700px;
-    margin-bottom: -12%;
-    margin-top: 5%;
-    width: 100%;
+    width: 70%;
     animation: fadeInUp;
     animation-duration: 1.5s;
+    gap: 15px;
 }
 
 .tituloContact {
@@ -795,7 +578,7 @@ footer .footerText {
 .inputContact {
     height: 35px;
     width: 500px;
-    margin-bottom: 4%;
+    margin-bottom: 3%;
 }
 
 .inputContact input {
@@ -806,6 +589,11 @@ footer .footerText {
     border-top: none;
     border-right: none;
     border-left: none;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+}
+
+.inputContact label {
     font-family: 'Karla', sans-serif;
     letter-spacing: 1px;
 }
@@ -825,22 +613,14 @@ footer .footerText {
     justify-content: center;
     align-items: center;
     gap: 1%;
-    height: 100px;
+    height: 250px;
     width: 100%;
     text-align: center;
-    
 }
-.buttonsForm .buttonForm{
+
+.buttonsForm button{
     height: 40px;
     width: 230px;
-    border-radius: 30px;
-    font-weight: bold;
-    background:  rgb(2, 0, 15);
-    color: white;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: none;
     font-family: 'Karla', sans-serif;
     letter-spacing: 1px;
 }
@@ -855,14 +635,30 @@ footer .footerText {
 
     /* PORTADA GENERAL */
 
-    .containerHome{
-        display: flex;
-        flex-direction: column;
-        height: 15vh;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
+    
+.carousel-inner img {
+    height: 70vh;
+ }
+
+
+ .menuIndex{
+     height: 1450px;
+ }
+
+ .textoMenuContainer {
+    height: 300px;
+}
+
+ 
+    .botonesHome input {
+    height: 40px;
+    width: 140px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+ }
 
     .titulo h3{
         font-size: 38px;
@@ -895,19 +691,12 @@ footer .footerText {
         gap: 30px;
         
     }
-    
-    .container-cards{
-        height: 320px;
-        width: 230px;
-        box-shadow: 0 0 7px #111;
-        
-    }
+
     .card img{
         margin: auto;
         display: block;
-        height: 220px;
-        width: 220px;
-        margin: 0px 10px;
+        height: 200px;
+        width: 200px;
         padding-bottom: 30px;
     }
     .info-card{
@@ -924,7 +713,6 @@ footer .footerText {
         font-size: 0.8em;
         text-align: center;
         color: #333;
-        margin: -30px 20px;
     }
     .precio{
         height: 20%;
@@ -944,28 +732,17 @@ footer .footerText {
     }
     .precio1{
         color: red;
-        font-size: .7em;
+        font-size: .6em;
         text-decoration: line-through;
+    
     }
     .precio2{
-        font-size: 1.5em;
-    }
-
-    .boton-carrito {
-        display: flex;
-        width: 100%;
-        justify-content: center;
+        font-size: 1.4em;
     }
     
-    .boton-carrito input {
-        height: 30px;
-        width: 80px;
-        border: none;
+    .boton-carrito button {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
-        background-color: black;
-        color: white;
-        font-weight: bold;
+        font-size: 14px;
     }
     
 
@@ -1027,15 +804,23 @@ footer .footerText {
 
      /* CONTAINER TEXTO NOSOTROS*/
 
+     .menuNosotros {
+         height: 1400px;
+     }
+     .textoMenuContainer{
+         height: 400px;
+     }
+
      .containerInfoNosotros {
         display: flex;
-        height: 480px;
+        height: 700px;
     }
     
     .containerInfoInsideNosotros {
         display: flex;
         flex-direction: column;
         gap: 60px;
+        
     }
     
     .containerInfoInsideNosotros .info {
@@ -1070,6 +855,15 @@ footer .footerText {
     
     
     /* CONTACTO */
+
+    .menuContacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 700px;
+        gap: 50px;
+    }
     .textoContacto h3{
         font-size: 25px;        
     }
@@ -1105,20 +899,14 @@ footer .footerText {
     .buttonsForm{
         gap: 3%;
         height: 70px;
+        margin-top: 70px;
     }
     .buttonsForm .buttonForm{
         height: 40px;
         width: 180px;
     }
-
-    .gridContainer4 {
-        display: grid;
-        height: auto;
-        grid-template-rows: 40vh auto 18vh;
-        grid-template-areas: 
-        "fondo3"
-        "menu"
-        "footer";
+    footer{
+        height: 200px;
     }
 }
 
@@ -1128,58 +916,71 @@ footer .footerText {
 @media (min-width: 480px) and (max-width: 768px) {
 
     /* NAV GENERAL*/
-    nav{
-        flex-direction: column;
-    }
+    .carousel-inner img {
+        height: 50vh;
+     }
 
-    nav ul {
-        flex-direction: row;
-        margin-top: 5%;
-        gap: 0px;
+     .carousel-caption {
+        position: absolute; 
+        right: 15%;
+        top: 90px;
+        left: 15%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+        
+      }
+
+      .menuIndex {
+          width: 100%;
+          height: 3050px;
+      }
+    
+      .textoMenuContainer {
+        height: 400px;
     }
     
-    nav label {
-        border-radius: 10px;
-        background-color: rgb(30, 30, 30);
-        font-size: 35px;
-    }
-    
-    nav:hover {
-        background: none;
-    }
-    
-    nav:hover a {
-        color: white;
-    }
-
-    a:hover {
-        background-color: lightslategrey;
-    }
-
-    nav:hover label {
-        color: white;
-    }
-    
-    nav ul li a {
-        background-color: rgb(30, 30, 30);
-        color: white;
-        font-size: 11.5px;
-        border-radius: 3px;
-        text-transform: uppercase;
-    }
-
-    /* PORTADA GENERAL */
-
-    .containerHome{
+    .texto-menu {
         display: flex;
-        flex-direction: column;
-        height: 15vh;
-        width: 100%;
-        align-items: center;
+        flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 750px;
+        font-family: 'Karla', sans-serif;
+        letter-spacing: 1px;
     }
+    
+    .texto-menu h3{
+        font-size: 28px;
+        color: #333;
+        animation: bounceIn;
+        animation-duration: 1s;
+        font-family: 'Karla', sans-serif;
+        letter-spacing: 1px;
+    }
+    .texto-menu p{
+        font-size: 18px;
+        margin-top: 25px;
+        color: #333;
+        font-family: 'Karla', sans-serif;
+        letter-spacing: 1px;
+    }
+    
+     
+     .botonesHome input {
+       height: 30px;
+       width: 110px;
+       border: none;
+       font-size: 13px;
+       font-weight: bold;
+       font-family: 'Karla', sans-serif;
+       letter-spacing: 1px;
+     }
 
-    .titulo h3{
+     .titulo h3{
         font-size: 38px;
     }
     
@@ -1260,39 +1061,21 @@ footer .footerText {
     
     /* NOSOTROS NAV */
 
-    .menu2{
-        display: flex;
-        height: 60px;
-        width: 98%;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 10px;
-        background: white(5, 0, 0);
-    }
-    
-    .menu2 label {
-        color: white;
-    }
-    
-    .menu2:hover {
-        background: none;
-    }
-    
-    .menu2 ul li a {
-        color: white;
-        font-size: 11.5px;
-    }
-    
-    .logoNosotros{
-        display: none;
-    }
-
 
     /* CONTAINER TEXTO NOSOTROS*/
 
+    .menuNosotros{
+
+        height: 1500px;
+    }
+
+    .textoMenuContainer {
+        height: 700px;
+    }
+
     .containerInfoNosotros {
         display: flex;
-        height: 700px;
+        height: 900px;
     }
     
     .containerInfoInsideNosotros {
@@ -1320,25 +1103,19 @@ footer .footerText {
         font-size: 20px;
     }
     
-    .logoSocial{
-        width: 40%;
-        height: auto;
-    }
-    
-    .logoSocial img{
-        height: 100%;
-        width: 100%;
-    }
+ 
+   
     
     
     /* CONTACTO */
-    .textoContacto h3{
-        font-size: 25px;        
+
+    .menuContacto {
     }
     
     .containerContact {
         height: auto;
         width: 100%;
+        margin-top: 30px;
     }
     
     .tituloContact {
@@ -1364,22 +1141,7 @@ footer .footerText {
         width: 450px;
     }
     
-    .buttonsForm{
-        gap: 3%;
-        height: 70px;
-    }
-    .buttonsForm .buttonForm{
-        height: 40px;
-        width: 180px;
-    }
-
-    .gridContainer4 {
-        display: grid;
-        height: auto;
-        grid-template-rows: 40vh auto 18vh;
-        grid-template-areas: 
-        "fondo3"
-        "menu"
-        "footer";
-    }
+   
+    
+    
 }
