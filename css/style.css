@@ -431,6 +431,7 @@ footer .footerText {
     letter-spacing: 1px;
 }
 
+
 .containerInfoInsideNosotros {
     display: flex;
     width: 80%;
@@ -456,6 +457,8 @@ footer .footerText {
     align-items: center;
 }
 
+
+
 .redesSocialesContainer .containerSocial {
     display: flex;
     width: 80%;
@@ -465,6 +468,7 @@ footer .footerText {
     font-family: 'Karla', sans-serif;
     letter-spacing: 1px;
     font-size: 13px;
+    
 }
 
 .redesSocialesContainerInside{
@@ -1065,8 +1069,7 @@ form{
     /* CONTAINER TEXTO NOSOTROS*/
 
     .menuNosotros{
-
-        height: 1500px;
+        height: 1800px;
     }
 
     .textoMenuContainer {
@@ -1092,20 +1095,34 @@ form{
 
 
     /* CONTAINER REDES SOCIALES*/
+
+    .redesSocialesContainer{
+        height: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     
+    .containerSocial{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerSocial h1{
+        font-size: 25px;
+        text-align: center;
+    }
+
     .redesSocialesContainerInside{
         flex-direction: row;
         gap:10%;
     }
-    
-    .redesSocialesTitulo h1{
-        margin-top: 17%;
-        font-size: 20px;
+
+    .redesSocialesContainerInside img{
+        height: 120px;
+        width: 120px;
     }
-    
  
-   
-    
     
     /* CONTACTO */
 
@@ -1158,15 +1175,16 @@ form{
     padding-bottom: 20px;
     color: #fff;
     text-align: center;
-    
   }
 
-  .menuIndex {
+  /* MENU INDEX*/
+
+.menuIndex {
       width: 100%;
       height: 3350px;
   }
 
-  .textoMenuContainer {
+.textoMenuContainer {
     height: 1500px;
 }
 
@@ -1196,7 +1214,6 @@ form{
     font-family: 'Karla', sans-serif;
     letter-spacing: 1px;
 }
-
  
  .botonesHome input {
    height: 30px;
@@ -1223,6 +1240,7 @@ form{
 .texto-menu h3{
     font-size: 26px;
 }
+
 .texto-menu p{
     font-size: 18px;
 }
@@ -1236,7 +1254,7 @@ form{
 
 .newsletterContenedor {
     display: flex;
-    height: 500px;
+    height: 300px;
     width: 100%;
     justify-content: center;
     text-align: center;
@@ -1248,6 +1266,7 @@ form{
     margin-top: 70px;
     margin-left: 5%;
     margin-right: 5%;
+    
 }
 
 .newsletter h1 {
@@ -1287,14 +1306,10 @@ form{
 }
 
 
-/* NOSOTROS NAV */
-
-
-/* CONTAINER TEXTO NOSOTROS*/
+/* NOSOTROS*/
 
 .menuNosotros{
-
-    height: 1500px;
+    height: 2000px;
 }
 
 .textoMenuContainer {
@@ -1318,26 +1333,29 @@ form{
     gap: 15px;
 }
 
-
 /* CONTAINER REDES SOCIALES*/
+
+.containerSocial{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerSocial h1{
+    font-size: 25px;
+    text-align: center;
+}
 
 .redesSocialesContainerInside{
     flex-direction: row;
     gap:10%;
 }
 
-.redesSocialesTitulo h1{
-    margin-top: 17%;
-    font-size: 20px;
+.redesSocialesContainerInside img{
+    height: 90px;
+    width: 90px;
 }
 
-
-
-
-
 /* CONTACTO */
-
-
 
 .containerContact {
     height: auto;
@@ -1352,20 +1370,24 @@ form{
 
 .inputContact {
     height: 35px;
-    width: 450px;
+    width: 300px;
 }
 
 .inputContact input {
-    width: 450px;
+    width: 300px;
     height: 35px;
 }
 
 .textAreaContact {
-    width: 450px;
+    width: 300px;
 }
 
 .textAreaContact textarea {
-    width: 450px;
+    width: 300px;
+}
+
+.buttonsForm{
+    width: 300px;
 }
     
 }
