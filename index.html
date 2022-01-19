@@ -32,7 +32,7 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse navLiMio" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navUL">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">HOME</a>
@@ -104,7 +104,7 @@
 
                 <div class="carousel-caption">
                     <h1>Conjuntos deportivos</h1>
-                    <h5>LLegaron las equipaciones de la temporada 2022</h5>
+                    <h5>Equipaciones de la temporada 2022</h5>
                     <div class="botonesHome">
                         <a href="#ofertas">
                             <input type="button" value="OFERTAS">
@@ -115,11 +115,11 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="carousel-item">
                 <img src="img/jordan.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                    <h1>Las nuevas Air Jordan</h1>
+                    <h1>Air Jordan</h1>
                     <h5>Edicion especial</h5>
                     <div class="botonesHome">
                         <a href="#ofertas">
@@ -161,6 +161,9 @@
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     <div class="col mb-5 tarjetaMIA">
                         <div class="card h-100">
+                            <div class="badge bg-primary text-white position-absolute"
+                                style="top: 0.5rem; right: 0.5rem">
+                                30% OFF</div>
                             <!-- Product image-->
                             <img class="card-img-top" src="img/manU.png" alt="..." />
                             <!-- Product details-->
@@ -169,14 +172,15 @@
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">Camiseta Man United</h5>
                                     <!-- Product price-->
-                                    $8000
+                                    <span class="text-muted text-decoration-line-through">$9000</span>
+                                    $7500
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center">
+                                <div class="text-center claseBotonTarjeta">
                                     <a href="">
-                                        <button type="button" class="btn btn-outline-dark">Comprar</button>
+                                        <button type="button" class="btn btn-outline-primary">Comprar</button>
                                     </a>
                                 </div>
                             </div>
@@ -185,8 +189,9 @@
                     <div class="col mb-5">
                         <div class="card h-100 tarjetaMIA">
                             <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                50% OFF</div>
+                            <div class="badge bg-primary text-white position-absolute"
+                                style="top: 0.5rem; right: 0.5rem">
+                                10% OFF</div>
                             <!-- Product image-->
                             <img class="card-img-top" src="img/psg.png" alt="..." />
                             <!-- Product details-->
@@ -194,14 +199,6 @@
                                 <div class="text-center">
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">Camiseta Psg</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
                                     <!-- Product price-->
                                     <span class="text-muted text-decoration-line-through">$9000</span>
                                     $7500
@@ -209,9 +206,9 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center">
+                                <div class="text-center claseBotonTarjeta">
                                     <a href="">
-                                        <button type="button" class="btn btn-outline-dark">Comprar</button>
+                                        <button type="button" class="btn btn-outline-primary">Comprar</button>
                                     </a>
                                 </div>
                             </div>
@@ -220,8 +217,9 @@
                     <div class="col mb-5">
                         <div class="card h-100 tarjetaMIA">
                             <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                50% OFF</div>
+                            <div class="badge bg-primary text-white position-absolute"
+                                style="top: 0.5rem; right: 0.5rem">
+                                30% OFF</div>
                             <!-- Product image-->
                             <img class="card-img-top" src="img/psg2.png" alt="..." />
                             <!-- Product details-->
@@ -236,9 +234,9 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center">
+                                <div class="text-center claseBotonTarjeta">
                                     <a href="">
-                                        <button type="button" class="btn btn-outline-dark">Comprar</button>
+                                        <button type="button" class="btn btn-outline-primary">Comprar</button>
                                     </a>
                                 </div>
                             </div>
@@ -246,6 +244,9 @@
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100 tarjetaMIA">
+                            <div class="badge bg-primary text-white position-absolute"
+                                style="top: 0.5rem; right: 0.5rem">
+                                20% OFF</div>
                             <!-- Product image-->
                             <img class="card-img-top" src="img/river.png" alt="..." />
                             <!-- Product details-->
@@ -253,23 +254,16 @@
                                 <div class="text-center">
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">Camiseta River Plate</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
                                     <!-- Product price-->
-                                    $6500.00
+                                    <span class="text-muted text-decoration-line-through">$9000</span>
+                                    $7500
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center">
+                                <div class="text-center claseBotonTarjeta">
                                     <a href="">
-                                        <button type="button" class="btn btn-outline-dark">Comprar</button>
+                                        <button type="button" class="btn btn-outline-primary">Comprar</button>
                                     </a>
                                 </div>
                             </div>
@@ -277,30 +271,26 @@
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100 tarjetaMIA">
+                            <div class="badge bg-primary text-white position-absolute"
+                                style="top: 0.5rem; right: 0.5rem">
+                                30% OFF</div>
                             <!-- Product image-->
                             <img class="card-img-top" src="img/nikeBotines.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
-                                <div class="text-center">
+                                <div class="text-center claseBotonTarjeta">
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">nikeBotines</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
                                     <!-- Product price-->
-                                    $6500.00
+                                    <span class="text-muted text-decoration-line-through">$9000</span>
+                                    $7500
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center">
+                                <div class="text-center claseBotonTarjeta">
                                     <a href="">
-                                        <button type="button" class="btn btn-outline-dark">Comprar</button>
+                                        <button type="button" class="btn btn-outline-primary">Comprar</button>
                                     </a>
                                 </div>
                             </div>
@@ -308,6 +298,9 @@
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100 tarjetaMIA">
+                            <div class="badge bg-primary text-white position-absolute"
+                                style="top: 0.5rem; right: 0.5rem">
+                                40% OFF</div>
                             <!-- Product image-->
                             <img class="card-img-top" src="img/pumaBotines.jpg" alt="..." />
                             <!-- Product details-->
@@ -324,14 +317,15 @@
                                         <div class="bi-star-fill"></div>
                                     </div>
                                     <!-- Product price-->
-                                    $6500.00
+                                    <span class="text-muted text-decoration-line-through">$9000</span>
+                                    $7500
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center">
+                                <div class="text-center claseBotonTarjeta">
                                     <a href="">
-                                        <button type="button" class="btn btn-outline-dark">Comprar</button>
+                                        <button type="button" class="btn btn-outline-primary">Comprar</button>
                                     </a>
                                 </div>
                             </div>
@@ -339,6 +333,9 @@
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100 tarjetaMIA">
+                            <div class="badge bg-primary text-white position-absolute"
+                                style="top: 0.5rem; right: 0.5rem">
+                                50% OFF</div>
                             <!-- Product image-->
                             <img class="card-img-top" src="img/adidasBotines.jpg" alt="..." />
                             <!-- Product details-->
@@ -355,14 +352,15 @@
                                         <div class="bi-star-fill"></div>
                                     </div>
                                     <!-- Product price-->
-                                    $6500.00
+                                    <span class="text-muted text-decoration-line-through">$9000</span>
+                                    $7500
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center">
+                                <div class="text-center claseBotonTarjeta">
                                     <a href="">
-                                        <button type="button" class="btn btn-outline-dark">Comprar</button>
+                                        <button type="button" class="btn btn-outline-primary">Comprar</button>
                                     </a>
                                 </div>
                             </div>
@@ -370,6 +368,9 @@
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100 tarjetaMIA">
+                            <div class="badge bg-primary text-white position-absolute"
+                                style="top: 0.5rem; right: 0.5rem">
+                                60% OFF</div>
                             <!-- Product image-->
                             <img class="card-img-top" src="img/buzoparis.jpg" alt="..." />
                             <!-- Product details-->
@@ -377,29 +378,26 @@
                                 <div class="text-center">
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">Buzo PSG</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
                                     <!-- Product price-->
-                                    $6500.00
+                                    <span class="text-muted text-decoration-line-through">$9000</span>
+                                    $7500
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center">
+                                <div class="text-center claseBotonTarjeta">
                                     <a href="">
-                                        <button type="button" class="btn btn-outline-dark">Comprar</button>
+                                        <button type="button" class="btn btn-outline-primary">Comprar</button>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
         </section>
+
+        <div class="enviosContainer">
+            <h3>Envios y devoluciones <span>GRATIS!</span></h3>
+        </div>
 
         <!--CONTAINERS CON TARJETAS INDEX VERSION ANTERIOR
         <div class="displayContainer">
@@ -582,72 +580,90 @@
         </div>
         -->
 
+
         <!--SLLIDER DE IMAGENES-->
         <div class="sliderContenedor">
             <div class="textoSlider">
-                <h3>Marcas que confian en nosotros</h3>
+                <h3>Todos los medios de pago disponibles</h3>
             </div>
         </div>
-        <!-- Marcas-->
+        <!-- Medios de pago-->
         <div class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="img/logonike2.png"
-                                alt="..." /></a>
+            <div class="container containerPagosYoPadre">
+                <div class="row align-items-center containerPagosYO">
+                    <div class="col-md-2 col-sm-6 sm-6 col-xs-6">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto"
+                                src="img/logosnuevos/logos_visa.062f66a8.svg" alt="..." /></a>
                     </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="img/logoadidas.png"
-                                alt="..." /></a>
+                    <div class="col-md-2 col-sm-6 sm-6 md-2">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto"
+                                src="img/logosnuevos/logos_master.60fdbcf5.svg" alt="..." /></a>
                     </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="img/logopuma2.png"
-                                alt="..." /></a>
+                    <div class="col-md-2 col-sm-6 my-6 xs-6">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto"
+                                src="img/logosnuevos/logos_amex.ed4e7028.svg" alt="..." /></a>
                     </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="img/logofila2.png"
-                                alt="..." /></a>
+                    <div class="col-md-2 col-sm-6 my-6 xs-6">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto"
+                                src="img/logosnuevos/logos_maestro.56f97b0e.svg" alt="..." /></a>
                     </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="img/logoconverse.png"
-                                alt="..." /></a>
+                    <div class="col-md-2 col-sm-6 my-6 xs-6">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto"
+                                src="img/logosnuevos/logos_naranja.6f60602d.svg" alt="..." /></a>
                     </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="img/logotopper2.png"
-                                alt="..." /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="img/logoreebok2.png"
-                                alt="..." /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="img/logounderarmour2.png"
-                                alt="..." /></a>
+                    <div class="col-md-2 col-sm-6 my-6 xs-6">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto"
+                                src="img/logosnuevos/bna-mas_1.svg" alt="..." /></a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--CONTAINER NEWSLETTER-->
-        <div class="newsletterContenedor">
-            <div class="newsletter">
-                <h1>Suscribite para recibir ofertas increíbles en tu email</h1>
-                <div class="mb-3">
-                    <div class="inputContactNewsletter">
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="nombre@gmail.com">
-                        <button type="button" class="btn btn-outline-dark">Enviar</button>
+        <div class="enviosContainer">
+            <h3>3 cuotas <span>Sin interes</span> en todo el sitio </h3>
+        </div>
+
+        <div class="sliderContenedor">
+            <div class="textoSlider">
+                <h3>Aprovechá las promos con tu banco</h3>
+            </div>
+        </div>
+        <!-- Promos bancarias-->
+        <div class="py-5">
+            <div class="container containerPagosYoPadre">
+                <div class="row align-items-center containerPagosYO">
+                    <div class="col-md-2 col-sm-6 sm-6 col-xs-6">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="img/logos bancos/1.png"
+                                alt="..." /></a>
+                    </div>
+                    <div class="col-md-2 col-sm-6 sm-6 md-2">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="img/logos bancos/8.png"
+                                alt="..." /></a>
+                    </div>
+                    <div class="col-md-2 col-sm-6 my-6 xs-6">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="img/logos bancos/7_0.png"
+                                alt="..." /></a>
+                    </div>
+                    <div class="col-md-2 col-sm-6 my-6 xs-6">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto"
+                                src="img/logos bancos/logos-frances-2.png" alt="..." /></a>
+
+                    </div>
+                    <div class="col-md-2 col-sm-6 my-6 xs-6">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto"
+                                src="img/logos bancos/logos-santander-2.png" alt="..." /></a>
+                    </div>
+                    <div class="col-md-2 col-sm-6 my-6 xs-6">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto"
+                                src="img/logos bancos/banco-macro.png" alt="..." /></a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!--CONTAINER INFO-->
+
+
+        <!--CONTAINER INFO
     <div class="containerInfo">
         <div class="containerInfoInside">
             <div class="info">
@@ -667,11 +683,28 @@
             </div>
         </div>
     </div>
+    -->
 
+    </div>
     <!--FOOTER-->
     <footer>
         <div class="footerText">
-            <p>Copyrights AgustinSC</p>
+            <!--CONTAINER NEWSLETTER-->
+            <div class="newsletterContenedor">
+                <div class="newsletter">
+                    <h1>Suscribite para recibir ofertas increíbles en tu email</h1>
+                    <div class="mb-3">
+                        <div class="inputContactNewsletter">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="nombre@gmail.com">
+                            <button type="button" class="btn btn-outline-primary">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="textoFooter">
+                <p>Copyrights AgustinSC</p>
+            </div>
         </div>
     </footer>
 

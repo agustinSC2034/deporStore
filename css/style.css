@@ -86,7 +86,7 @@
  }
  
  .botonesHome input:hover{
-   background: rgb(25, 24, 24);
+   background: rgb(42, 158, 230);
    color: white;
  }
 
@@ -115,8 +115,8 @@
   }
   
   .botonesHomeEspeciales input:hover{
-    background: lightskyblue;
-    color: rgb(25, 24, 24);
+    background: rgb(42, 158, 230);
+    color: white(25, 24, 24);
   }
 
 
@@ -124,9 +124,10 @@
 
 .menuIndex {
     width: 100%;
-    height: 2100px;
+    height: 2300px;
     display: flex;
     flex-direction: column;
+    justify-content: start;
 }
 
 .textoMenuContainer {
@@ -179,100 +180,40 @@
 
 /* HOME: Seccion de productos */
 
-.displayContainer{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 400px;
-    justify-content: center;
-    gap: 20px;
-    font-family: 'Karla', sans-serif;
-    letter-spacing: 0.5px;
-    padding-top: 20px;
-}
-
-.container-cards{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    border-style:solid;
-    border-color: rgba(0, 0, 0, 0.122);
-    border-radius: 10px;
-}
-
 .tarjetaMIA:hover {
     background: white;
     box-shadow: 0 0 10px #111111, 0 0 40px;
 }
 
-.container-cards .card{
-    border-style: none;
+.claseBotonTarjeta button {
+    border-color: black;
+    color: black;
 }
 
-.card img{
-    margin: auto;
-    display: block;
-    height: 280px;
-    width: 240px;
-    background-position: center;
-    padding-bottom: 40px;
-}
-.info-card{
-    display: flex;
-    height: 10%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 8px;
-}
-
-.info-card h1{
-    font-family: 'Karla', sans-serif;
-    font-size: 1.0em;
-    text-align: center;
-    color: #333;
-}
-.precio{
-    height: 50px;
-    width: 85%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Karla', sans-serif;
-    letter-spacing: 0.5px;
-    background: white;
-}
-.box-precio{
-    width: 80px;
-    margin: 10px 15px;
-    display: flex;
-    flex-direction: column;
-}
-.precio1{
-    color: red;
-    font-size: .8em;
-    text-decoration: line-through;
-    font-family: 'Karla', sans-serif;
-    letter-spacing: 0.5px;
-}
-.precio2{
-    font-size: 1.3em;
-}
-
-.boton-carrito input {
-    height: 40px;
-    width: 100px;
-    border: none;
-    font-size: 13px;
-    background-color: black;
+.claseBotonTarjeta button:hover {
     color: white;
-    font-weight: bold;
+}
+
+
+/* BARRAS HORIZONTALES*/
+.enviosContainer{
+    display: flex;
+    width: 100%;
+    height: 115px;
+    background-color: rgb(42, 41, 41);
+    justify-content: center;
+    align-items: center;
+}
+
+.enviosContainer h3{
     font-family: 'Karla', sans-serif;
     letter-spacing: 1px;
+    color: white;
+}
+
+.enviosContainer h3 span {
+    font-weight: bold;
+    color: rgb(42, 158, 230);
 }
 
 /* /* HOME: Seccion de slider */
@@ -282,7 +223,7 @@
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    height: 250px;
+    height: 110px;
     font-family: 'Karla', sans-serif;
     letter-spacing: 1px;
 }
@@ -292,24 +233,30 @@
     color: #333;
     text-align: center;
 }
-.textoSlider p{
-    color: #333;
-    text-align: center;
-    margin-top: 10px;
+
+.py-5{
+    }
+    
+.containerPagosYoPadre{
+    
+}
+    
+.containerPagosYO{
+    
 }
 
-.slider{
-    height: 150px;
-    width: 100%;
-    margin: 0px 0px;
-    background: lightskyblue;
+.containerPagosYO2{
+
 }
+
+
+
 
 /* HOME: Seccion de Newsletter */
 
 .newsletterContenedor {
     display: flex;
-    height: 400px;
+    height: 200px;
     width: 100%;
     justify-content: center;
     text-align: center;
@@ -340,7 +287,10 @@
 
 .inputContactNewsletter button {
     background: white;
+    color: black;
+    border-color: black;
 }
+
 
 .newsletter .email {
     height: 35px;
@@ -358,13 +308,14 @@
 /* Footer general */
 footer{
     display: flex;
-    background-color: rgb(27, 24, 24);
-    height: 25vh;
+    flex-direction: column;
+    background-color:  rgb(42, 41, 41);
+    height: 40vh;
     width: 100%;
     color: white;
     justify-content: center;
     text-align: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
 footer .footerText {
@@ -408,8 +359,7 @@ footer .footerText {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 20px;
-    height: 2500px;
+    height: auto;
     padding-top: 50px;
 }
 
@@ -628,7 +578,7 @@ footer .footerText {
 
 .menu {
     width: 100%;
-    height: 1000px;
+    height: 100px;
     display: flex;
     flex-direction: column;
 }
@@ -736,9 +686,7 @@ form{
 
 
 /* Media queries*/
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1124px) {
 
 
     /* PORTADA GENERAL */
@@ -750,23 +698,17 @@ form{
 
 
  .menuIndex{
-     height: 1450px;
+    height: 2200px;
+    display: flex;
  }
 
  .textoMenuContainer {
-    height: 300px;
+height: 20px;
+justify-content: start;
+display: none;
+
 }
 
- 
-    .botonesHome input {
-    height: 40px;
-    width: 140px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: 'Karla', sans-serif;
-    letter-spacing: 1px;
- }
 
     .titulo h3{
         font-size: 38px;
@@ -788,70 +730,6 @@ form{
     }
 
 
-    /* SECCION DE PRODUCTOS */
-
-    .displayContainer{
-        display: flex;
-        align-items: center;
-        margin-top: 30px;
-        width: 100%;
-        justify-content: center;
-        gap: 30px;
-        
-    }
-
-    .card img{
-        margin: auto;
-        display: block;
-        height: 200px;
-        width: 200px;
-        padding-bottom: 30px;
-    }
-    .info-card{
-        display: flex;
-        height: 11%;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-
-  
-    }
-    .info-card h1{
-        font-family: sans-serif;
-        font-size: 0.8em;
-        text-align: center;
-        color: #333;
-    }
-    .precio{
-        height: 20%;
-        width: 100%;
-        margin: auto;
-        font-family: sans-serif;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .box-precio{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 40%;
-    }
-    .precio1{
-        color: red;
-        font-size: .6em;
-        text-decoration: line-through;
-    
-    }
-    .precio2{
-        font-size: 1.4em;
-    }
-    
-    .boton-carrito button {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-    }
     
 
 
@@ -859,7 +737,7 @@ form{
     
     .newsletterContenedor {
         display: flex;
-        height: 200px;
+        height: 100px;
         width: 100%;
         justify-content: center;
         text-align: center;
@@ -867,7 +745,7 @@ form{
     }
     
     .newsletter {
-        height: 150px;
+        height: 110px;
         margin-top: 70px;
         margin-left: 5%;
         margin-right: 5%;
@@ -906,14 +784,22 @@ form{
     }
 
     .containerInfo {
-        display: none;
+        background-color: rgb(44, 44, 44);
+        color: white;
+        height: 350px;
     }
     
+
+    /* PRODCUTOS*/
+
+    .menuProductos{
+        height: 2500px;
+    }
 
      /* CONTAINER TEXTO NOSOTROS*/
 
      .menuNosotros {
-         height: 1400px;
+         height: 1600px;
      }
      .textoMenuContainer{
          height: 400px;
@@ -969,7 +855,7 @@ form{
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        height: 700px;
+        height: 750px;
         gap: 50px;
     }
     .textoContacto h3{
@@ -1021,7 +907,7 @@ form{
 
 
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 590px) and (max-width: 768px) {
 
     /* NAV GENERAL*/
     .carousel-inner img {
@@ -1038,16 +924,24 @@ form{
         padding-bottom: 20px;
         color: #fff;
         text-align: center;
-        
+      }
+
+      .carousel-caption h1{
+        font-size: 60px;
+      }
+      .carousel-caption h5{
+          display: none;
       }
 
       .menuIndex {
           width: 100%;
-          height: 3050px;
+          height: 3350px;
+          justify-content: start;
+          display: flex;
       }
     
       .textoMenuContainer {
-        height: 400px;
+    display: none;
     }
     
     .texto-menu {
@@ -1076,17 +970,6 @@ form{
         font-family: 'Karla', sans-serif;
         letter-spacing: 1px;
     }
-    
-     
-     .botonesHome input {
-       height: 30px;
-       width: 110px;
-       border: none;
-       font-size: 13px;
-       font-weight: bold;
-       font-family: 'Karla', sans-serif;
-       letter-spacing: 1px;
-     }
 
      .titulo h3{
         font-size: 38px;
@@ -1105,11 +988,6 @@ form{
     }
     .texto-menu p{
         font-size: 18px;
-    }
-
-    .displayContainer {
-        display: flex;
-        flex-direction: column;
     }
 
     /* NEWSLETTER GENERAL*/
@@ -1165,15 +1043,19 @@ form{
     .containerInfo {
         display: none;
     }
+
+    /* PRODUCTOS */
+
+    .menuProductos{
+        height: 3000px;
+    }
     
-    
-    /* NOSOTROS NAV */
 
 
     /* CONTAINER TEXTO NOSOTROS*/
 
     .menuNosotros{
-        height: 1800px;
+        height: 2400px;
     }
 
     .textoMenuContainer {
@@ -1262,7 +1144,7 @@ form{
     }
 }
 
-@media (min-width: 0px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 600px) {
 
     /* NAV GENERAL*/
 .carousel-inner img {
@@ -1281,15 +1163,21 @@ form{
     text-align: center;
   }
 
+  .carousel-caption h5{
+      display: none;
+  }
+
   /* MENU INDEX*/
 
 .menuIndex {
       width: 100%;
-      height: 3350px;
+      height: 3700px;
+      background-color: raed;
   }
 
 .textoMenuContainer {
     height: 1500px;
+    display: none;
 }
 
 .texto-menu {
@@ -1320,13 +1208,6 @@ form{
 }
  
  .botonesHome input {
-   height: 30px;
-   width: 110px;
-   border: none;
-   font-size: 13px;
-   font-weight: bold;
-   font-family: 'Karla', sans-serif;
-   letter-spacing: 1px;
  }
 
  .titulo h3{
@@ -1349,16 +1230,27 @@ form{
     font-size: 18px;
 }
 
-.displayContainer {
-    display: flex;
-    flex-direction: column;
+.py-5{
 }
+
+.containerPagosYoPadre{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.containerPagosYO{
+    width: 50%;
+}
+
+
 
 /* NEWSLETTER GENERAL*/
 
 .newsletterContenedor {
     display: flex;
-    height: 300px;
+    height: 180px;
     width: 100%;
     justify-content: center;
     text-align: center;
@@ -1409,11 +1301,15 @@ form{
     display: none;
 }
 
+.menuProductos{
+    height: 2900px;
+}
+
 
 /* NOSOTROS*/
 
 .menuNosotros{
-    height: 2000px;
+    height: 3050px;
 }
 
 .textoMenuContainer {
