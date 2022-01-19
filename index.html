@@ -24,16 +24,16 @@
 
 <body>
     <!--NAV-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navMIO">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">DeporStore</a>
+            <a class="navbar-brand logoMio" href="#">DeporStore</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navUL">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -140,24 +140,273 @@
     </div>
 
     <!--MENU INDEX-->
-    <!--CONTAINER CON TEXTO-->
+    <!--CONTAINER CON TITULO OFERTAS-->
     <div class="menuIndex">
         <div class="textoMenuContainer">
             <div class="texto-menu">
                 <a name="ofertas">
-                    <h3>Ofertas de la semana</h3>
+                    <h3>Ofertas de la semana!</h3>
                 </a>
-                <p>Acá encontraras las ofertas semanales, todas las semanas se renuevan. Lorem ipsum dolor sit
-                    amet
-                    consectetur adipisicing elit. Repudiandae quia est aperiam minus quis cum, officiis qui amet
-                    consequuntur accusamus, cupiditate, eius asperiores numquam totam?</p>
             </div>
         </div>
 
-        <!--CONTAINERS CON TARJETAS INDEX-->
+        <!--CONTAINER CON TARJETAS PRODUCTOS-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/manU.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Camiseta Man United</h5>
+                                    <!-- Product price-->
+                                    $8000
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <a href="">
+                                        <button type="button" class="btn btn-outline-dark">Comprar</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                                50% OFF</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/psg.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Camiseta Psg</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$9000</span>
+                                    $7500
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <a href="">
+                                        <button type="button" class="btn btn-outline-dark">Comprar</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                                50% OFF</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/psg2.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Camiseta Psg</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$7000</span>
+                                    $6000
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <a href="">
+                                        <button type="button" class="btn btn-outline-dark">Comprar</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/river.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Camiseta River Plate</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    $6500.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <a href="">
+                                        <button type="button" class="btn btn-outline-dark">Comprar</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <!--CONTAINER CON TITULO OFERTAS-->
+        <div class="textoMenuContainer2">
+            <div class="texto-menu">
+                <a name="ofertas">
+                    <h3>Lo más vendido del mes!</h3>
+                </a>
+            </div>
+        </div>
+
+        <!--CONTAINER CON TARJETAS PRODUCTOS-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/manU.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Camiseta Man United</h5>
+                                    <!-- Product price-->
+                                    $8000
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <a href="">
+                                        <button type="button" class="btn btn-outline-dark">Comprar</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                                10% OFF</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/psg.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Camiseta Psg</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$9000</span>
+                                    $7500
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <a href="">
+                                        <button type="button" class="btn btn-outline-dark">Comprar</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                                0% OFF</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/psg2.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Camiseta Psg</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$7000</span>
+                                    $6000
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <a href="">
+                                        <button type="button" class="btn btn-outline-dark">Comprar</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/river.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Camiseta River Plate</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    $6500.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <a href="">
+                                        <button type="button" class="btn btn-outline-dark">Comprar</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <!--CONTAINERS CON TARJETAS INDEX VERSION ANTERIOR
         <div class="displayContainer">
-            <div class="card" style="width: 18rem;">
-                <div class="card">
+            <div class="container-cards">
+                <div class=" card">
                     <img src="img/psg.png" alt="">
                 </div>
                 <div class="info-card">
@@ -176,8 +425,27 @@
                 </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
-                <div class="card">
+            <div class="container-cards">
+                <div class=" card">
+                    <img src="img/manU.png" alt="">
+                </div>
+                <div class="info-card">
+                    <h1>Camiseta Man United titular</h1>
+                </div>
+                <div class="precio">
+                    <div class="box-precio">
+                        <span class="precio1">$9999</span>
+                        <span class="precio2"><b>$7800</b></span>
+                    </div>
+                    <div class="boton-carrito">
+                        <a href="">
+                            <button type="button" class="btn btn-outline-dark">Comprar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-cards">
+                <div class=" card">
                     <img src="img/manU.png" alt="">
                 </div>
                 <div class="info-card">
@@ -196,7 +464,7 @@
                 </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
+            <div class="container-cards">
                 <div class="card">
                     <img src="img/river.png" alt="">
                 </div>
@@ -216,67 +484,105 @@
                 </div>
             </div>
         </div>
+
+        <div class="textoMenuContainer">
+            <div class="texto-menu">
+                <a name="ofertas">
+                    <h3>Lo más vendidos del mes!</h3>
+                </a>
+            </div>
+        </div>
+
         <div class="displayContainer">
-            <div class="card" style="width: 18rem;">
+            <div class="container-cards">
                 <div class="card">
-                    <img src="img/nikeBotines.jpg" alt="">
-                </div>
-                <div class="info-card">
-                    <h1>Botines Nike</h1>
-                </div>
-                <div class="precio">
-                    <div class="box-precio">
-                        <span class="precio1">$9999</span>
-                        <span class="precio2"><b>$7800</b></span>
+                    <div class="card">
+                        <img src="img/nikeBotines.jpg" alt="">
                     </div>
-                    <div class="boton-carrito">
-                        <a href="">
-                            <button type="button" class="btn btn-outline-dark">Comprar</button>
-                        </a>
+                    <div class="info-card">
+                        <h1>Botines Nike</h1>
+                    </div>
+                    <div class="precio">
+                        <div class="box-precio">
+                            <span class="precio1">$9999</span>
+                            <span class="precio2"><b>$7800</b></span>
+                        </div>
+                        <div class="boton-carrito">
+                            <a href="">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
+            <div class="container-cards">
                 <div class="card">
-                    <img src="img/adidasBotines.jpg" alt="">
-                </div>
-                <div class="info-card">
-                    <h1>Botines Adidas</h1>
-                </div>
-                <div class="precio">
-                    <div class="box-precio">
-                        <span class="precio1">$9999</span>
-                        <span class="precio2"><b>$7800</b></span>
+                    <div class="card">
+                        <img src="img/adidasBotines.jpg" alt="">
                     </div>
-                    <div class="boton-carrito">
-                        <a href="">
-                            <button type="button" class="btn btn-outline-dark">Comprar</button>
-                        </a>
+                    <div class="info-card">
+                        <h1>Botines Adidas</h1>
+                    </div>
+                    <div class="precio">
+                        <div class="box-precio">
+                            <span class="precio1">$9999</span>
+                            <span class="precio2"><b>$7800</b></span>
+                        </div>
+                        <div class="boton-carrito">
+                            <a href="">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
+            <div class="container-cards">
                 <div class="card">
-                    <img src="img/pumaBotines.jpg" alt="">
-                </div>
-                <div class="info-card">
-                    <h1>Botines Puma</h1>
-                </div>
-                <div class="precio">
-                    <div class="box-precio">
-                        <span class="precio1">$9999</span>
-                        <span class="precio2"><b>$7800</b></span>
+                    <div class="card">
+                        <img src="img/adidasBotines.jpg" alt="">
                     </div>
-                    <div class="boton-carrito">
-                        <a href="">
-                            <button type="button" class="btn btn-outline-dark">Comprar</button>
-                        </a>
+                    <div class="info-card">
+                        <h1>Botines Adidas</h1>
+                    </div>
+                    <div class="precio">
+                        <div class="box-precio">
+                            <span class="precio1">$9999</span>
+                            <span class="precio2"><b>$7800</b></span>
+                        </div>
+                        <div class="boton-carrito">
+                            <a href="">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-cards">
+                <div class="card">
+                    <div class="card">
+                        <img src="img/pumaBotines.jpg" alt="">
+                    </div>
+                    <div class="info-card">
+                        <h1>Botines Puma</h1>
+                    </div>
+                    <div class="precio">
+                        <div class="box-precio">
+                            <span class="precio1">$9999</span>
+                            <span class="precio2"><b>$7800</b></span>
+                        </div>
+                        <div class="boton-carrito">
+                            <a href="">
+                                <button type="button" class="btn btn-outline-dark">Comprar</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        -->
 
         <!--SLLIDER DE IMAGENES: en proceso-->
         <div class="sliderContenedor">
@@ -295,10 +601,31 @@
                 <div class="mb-3">
                     <div class="inputContactNewsletter">
                         <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com">
+                            placeholder="nombre@gmail.com">
                         <button type="button" class="btn btn-outline-dark">Enviar</button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTAINER INFO-->
+    <div class="containerInfo">
+        <div class="containerInfoInside">
+            <div class="info">
+                <h3>Devoluciones</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea id iste numquam ducimus autem est
+                    repudiandae suscipit dignissimos, molestiae quis!</p>
+            </div>
+            <div class="info">
+                <h3>Medidos de pago</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea id iste numquam ducimus autem est
+                    repudiandae suscipit dignissimos, molestiae quis!</p>
+            </div>
+            <div class="info">
+                <h3>Servicio al cliente</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea id iste numquam ducimus autem est
+                    repudiandae suscipit dignissimos, molestiae quis!</p>
             </div>
         </div>
     </div>

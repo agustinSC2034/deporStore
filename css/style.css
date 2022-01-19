@@ -8,8 +8,17 @@
 
 /* HOME */
 
+.navMIO {
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+}
+
+.navUL {
+    gap: 10px;
+}
+
 .carousel-inner img {
-    height: 92.5vh;
+    height: 93.3vh;
     width: 100%;
      background-blend-mode: soft-light;    
      background-position: center;
@@ -25,7 +34,21 @@
     height: 60%;
     justify-content: flex-start;
     align-items: center;
-   
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+    
+ }
+
+ .carousel-caption h1 {
+    animation: fadeInUp;
+    animation-duration: 1s;
+    font-size: 60px;   
+ }
+
+ .carousel-caption h5 {
+    animation: fadeInUp;
+    animation-duration: 1s;
+    font-size: 25px;   
  }
  
  .botonesHome {
@@ -36,6 +59,8 @@
    align-items: center;
    justify-content: center;
    gap: 10px;
+   font-family: 'Karla', sans-serif;
+   letter-spacing: 1px;
  }
  
  .botonesHome input {
@@ -65,7 +90,17 @@
 
 .textoMenuContainer {
     display: flex;
-    height: 300px;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+}
+
+.textoMenuContainer2 {
+    display: flex;
+    height: 100px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -106,13 +141,35 @@
 .displayContainer{
     display: flex;
     align-items: center;
-    margin-top: 30px;
     width: 100%;
+    height: 400px;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     font-family: 'Karla', sans-serif;
     letter-spacing: 0.5px;
+    padding-top: 20px;
 }
+
+.container-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border-style:solid;
+    border-color: rgba(0, 0, 0, 0.122);
+    border-radius: 10px;
+}
+
+.container-cards:hover {
+    background: white;
+    box-shadow: 0 0 10px #111111, 0 0 40px;
+}
+
+.container-cards .card{
+    border-style: none;
+}
+
 .card img{
     margin: auto;
     display: block;
@@ -127,6 +184,8 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding-top: 8px;
 }
 
 .info-card h1{
@@ -144,6 +203,7 @@
     align-items: center;
     font-family: 'Karla', sans-serif;
     letter-spacing: 0.5px;
+    background: white;
 }
 .box-precio{
     width: 80px;
@@ -215,10 +275,16 @@
     align-items: center;
     font-family: 'Karla', sans-serif;
     letter-spacing: 1px;
+    margin-top: 50px;
+    background-color: rgb(42, 41, 41);
 }
 
 .newsletter {
     height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
 }
 
 .newsletter h1 {
@@ -231,6 +297,10 @@
     gap: 10px;
 }
 
+.inputContactNewsletter button {
+    background: white;
+}
+
 .newsletter .email {
     height: 35px;
     width: 68%;
@@ -240,21 +310,6 @@
     border-top: none;
     border-right: none;
     border-left: none;
-    font-family: 'Karla', sans-serif;
-    letter-spacing: 1px;
-}
-
-.newsletter .button {
-    height: 30px;
-    width: 70px;
-    margin: 0px -10px;
-    font-weight: bold;
-    background:  rgb(27, 24, 24);
-    color: white;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: none;
     font-family: 'Karla', sans-serif;
     letter-spacing: 1px;
 }
@@ -308,6 +363,15 @@ footer .footerText {
     background-repeat: no-repeat;
 }
 
+.menuProductos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    height: 2500px;
+    padding-top: 50px;
+}
+
 .textoMenuContainer2 {
     display: flex;
     height: 150px;
@@ -336,32 +400,13 @@ footer .footerText {
     animation-duration: 1s;
 }
 
-.pagination {
-    font-size: 15px;
-    font-family: 'Karla', sans-serif;
-    letter-spacing: 1px;
-}
-
-.paginas {
-    display: flex;
-    width: 100%;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    font-size: 15px;
-    font-family: 'Karla', sans-serif;
-    letter-spacing: 1px;
-}
-
 .containerInfo {
     display: flex;
     width: 100%;
-    height: 300px;
+    height: 450px;
     justify-content: center;
     text-align: center;
     align-items: center;
-    background: aqua;
 }
 
 .containerInfoInside {
