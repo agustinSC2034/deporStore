@@ -13,6 +13,10 @@
     letter-spacing: 1px;
 }
 
+.imgCarouselMIO{
+    display: flex;
+}
+
 .navUL {
     gap: 10px;
 }
@@ -45,10 +49,18 @@
     font-size: 60px;   
  }
 
+ .carousel-caption .tituloEspecial{
+     color: black;
+ }
+
+ .carousel-caption .subtituloEspecial{
+    color: black;
+}
+
  .carousel-caption h5 {
     animation: fadeInUp;
     animation-duration: 1s;
-    font-size: 25px;   
+    font-size: 25px;
  }
  
  .botonesHome {
@@ -78,19 +90,48 @@
    color: white;
  }
 
+ .botonesHomeEspeciales{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+ }
+
+ .botonesHomeEspeciales input {
+    height: 50px;
+    width: 170px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+    background: rgb(25, 24, 24);
+    color: white;
+  }
+  
+  .botonesHomeEspeciales input:hover{
+    background: lightskyblue;
+    color: rgb(25, 24, 24);
+  }
+
 
 /* HOME: Seccion de ofertas*/
 
 .menuIndex {
     width: 100%;
-    height: 1900px;
+    height: 2100px;
     display: flex;
     flex-direction: column;
 }
 
 .textoMenuContainer {
     display: flex;
-    height: 400px;
+    height: 160px;
     width: 100%;
     justify-content: center;
     align-items: flex-end;
@@ -136,7 +177,7 @@
 }
 
 
-/* /* HOME: Seccion de productos */
+/* HOME: Seccion de productos */
 
 .displayContainer{
     display: flex;
@@ -161,7 +202,7 @@
     border-radius: 10px;
 }
 
-.container-cards:hover {
+.tarjetaMIA:hover {
     background: white;
     box-shadow: 0 0 10px #111111, 0 0 40px;
 }
@@ -341,7 +382,7 @@ footer .footerText {
     height: 50vh;
     flex-wrap: wrap;
     justify-content: center;
-    background: url(../img/leaguev3.jpeg);
+    background: url(../img/blackkkkkk.png);
     background-color: rgba(45, 45, 45, 0.7);
     background-blend-mode: soft-light;    
     background-position: center;
@@ -355,7 +396,7 @@ footer .footerText {
     height: 50vh;
     flex-wrap: wrap;
     justify-content: center;
-    background: url(../img/nikebanner.png);
+    background: url(../img/air-jordan-1-royal-toe-wallpaper-4k.jpg);
     background-color: rgba(45, 45, 45, 0.7);
     background-blend-mode: soft-light;    
     background-position: center;
@@ -450,6 +491,24 @@ footer .footerText {
     flex-direction: column;
     width: 100%;
     height: 1200px;
+}
+.textoMenuContainerNosotros{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 400px;
+}
+
+.texto-menuNosotros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 .logoNosotros{
