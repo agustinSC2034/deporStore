@@ -1,0 +1,275 @@
+@import "variables";
+
+/* HOME: Sección NAV + FONDO */
+.navMIO {
+    letter-spacing: 1px;
+}
+
+.imgCarouselMIO{
+    display: flex;
+}
+
+.navUL {
+    gap: 10px;
+}
+
+.carousel-inner img {
+    height: 93.3vh;
+    width: 100%;
+    background-blend-mode: soft-light;    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ 
+ .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    height: 60%;
+    justify-content: flex-start;
+    align-items: center;
+    letter-spacing: 1px;
+ }
+
+ .carousel-caption h1 {
+    animation: fadeInUp;
+    animation-duration: 1s;
+    font-size: 60px;   
+ }
+
+ .carousel-caption .tituloEspecial{
+    color: black;
+ }
+
+ .carousel-caption .subtituloEspecial{
+    color: black;
+}
+
+ .carousel-caption h5 {
+    animation: fadeInUp;
+    animation-duration: 1s;
+    font-size: 25px;
+ }
+ 
+ .botonesHome {
+   display: flex;
+   width: 100%;
+   height: 40px;
+   padding-top: 40px;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   letter-spacing: 1px;
+ }
+ 
+ .botonesHome input {
+   height: 50px;
+   width: 170px;
+   border: none;
+   font-size: 16px;
+   font-weight: bold;
+   letter-spacing: 1px;
+ }
+ 
+ .botonesHome input:hover{
+   background: $azulEspecial;
+   color: white;
+ }
+
+ .botonesHomeEspeciales{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    letter-spacing: 1px;
+ }
+
+ .botonesHomeEspeciales input {
+    height: 50px;
+    width: 170px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: rgb(25, 24, 24);
+    color: white;
+  }
+  
+  .botonesHomeEspeciales input:hover{
+    background: $azulEspecial;
+    color: white(25, 24, 24);
+  }
+
+
+/* HOME: Seccion de ofertas*/
+
+
+.menuIndex {
+    width: 100%;
+    height: 2200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.textoMenuContainer {
+    display: flex;
+    height: 160px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    letter-spacing: 1px;
+}
+
+.texto-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 750px;
+    letter-spacing: 1px;
+}
+
+.texto-menu h3{
+    font-size: 28px;
+    color: #333;
+    animation: bounceIn;
+    animation-duration: 1s;
+    letter-spacing: 1px;
+}
+.texto-menu p{
+    font-size: 18px;
+    margin-top: 25px;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+
+/* HOME: Seccion de productos: Tarjetas de productos */
+
+.tarjetaMIA:hover {
+    background: white;
+    box-shadow: 0 0 10px #111111, 0 0 40px;
+}
+
+.claseBotonTarjeta button {
+    border-color: black;
+    color: black;
+}
+
+.claseBotonTarjeta button:hover {
+    color: white;
+}
+
+/* HOME: Seccion de productos: Barras horizontales */
+
+.enviosContainer{
+    display: flex;
+    width: 100%;
+    height: 115px;
+    background-color: rgb(42, 41, 41);
+    justify-content: center;
+    align-items: center;
+}
+
+.enviosContainer h3{
+    letter-spacing: 1px;
+    color: white;
+}
+
+.enviosContainer h3 span {
+    font-weight: bold;
+    color: $azulEspecial;
+}
+
+
+/* /* HOME: Titulo de slider */
+
+.sliderContenedor{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 110px;
+    letter-spacing: 1px;
+}
+
+.textoSlider h3{
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+}
+
+
+/* Footer general */
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(42, 41, 41);
+    height: 40vh;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+footer .footerText {
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* HOME: Footer: Newsletter */
+
+.newsletterContenedor {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 1px;
+    background-color: rgb(42, 41, 41);
+}
+
+.newsletter {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.newsletter h1 {
+    font-size: 25px;
+}
+
+.inputContactNewsletter {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.inputContactNewsletter button {
+    background: white;
+    color: black;
+    border-color: black;
+}
+
+.newsletter .email {
+    height: 35px;
+    width: 68%;
+    margin: 30px 20px;
+    text-align: center;
+    font-size: 1.0em;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    letter-spacing: 1px;
+}

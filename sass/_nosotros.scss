@@ -1,0 +1,141 @@
+@import "variables";
+
+/* NOSOTROS */
+.fondoNosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    height: 40vh;
+}
+
+.menuNosotros {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1200px;
+}
+.textoMenuContainerNosotros{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 400px;
+}
+
+.texto-menuNosotros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    letter-spacing: 1px;
+}
+
+.logoNosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/ds.png);
+    background-blend-mode: soft-light;    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 190px;
+    height: 150px;
+}
+
+.containerInfoNosotros {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.containerInfoInsideNosotros {
+    display: flex;
+    width: 80%;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.containerInfoInsideNosotros .info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.redesSocialesContainer{
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    width: 100%;
+    align-items: center;
+}
+
+.redesSocialesContainer .containerSocial {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    letter-spacing: 1px;
+    font-size: 13px;
+    
+}
+
+.redesSocialesContainerInside{
+    display: flex;
+    height: 190px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.logoSocial{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoSocial img{
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    height: 120px;
+    width: 120px;
+}
+
+.titulo{
+    text-align: center;
+    color: white;
+    padding: 25vh 0;
+    letter-spacing: 1px;
+}
+.titulo h3{
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.titulo p{
+    border: 20px;
+    line-height: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
