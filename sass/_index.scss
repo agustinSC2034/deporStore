@@ -52,33 +52,8 @@
     animation-duration: 1s;
     font-size: 25px;
  }
- 
- .botonesHome {
-   display: flex;
-   width: 100%;
-   height: 40px;
-   padding-top: 40px;
-   align-items: center;
-   justify-content: center;
-   gap: 10px;
-   letter-spacing: 1px;
- }
- 
- .botonesHome input {
-   height: 50px;
-   width: 170px;
-   border: none;
-   font-size: 16px;
-   font-weight: bold;
-   letter-spacing: 1px;
- }
- 
- .botonesHome input:hover{
-   background: $azulEspecial;
-   color: white;
- }
 
- .botonesHomeEspeciales{
+ @mixin btnHome {
     display: flex;
     width: 100%;
     height: 40px;
@@ -89,20 +64,41 @@
     letter-spacing: 1px;
  }
 
- .botonesHomeEspeciales input {
+ @mixin inputHome {
     height: 50px;
     width: 170px;
     border: none;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
-    background: rgb(25, 24, 24);
+ }
+ 
+ .botonesHome {
+   @include btnHome;
+ }
+ 
+ .botonesHome input {
+    @include inputHome;
+ }
+ 
+ .botonesHome input:hover{
+    background: map-get($colores, AzulBotones);
+   color: white;
+ }
+
+ .botonesHomeEspeciales{
+    @include btnHome;
+ }
+
+ .botonesHomeEspeciales input {
+    @include inputHome;
+    background: map-get($colores, secondary);
     color: white;
   }
   
   .botonesHomeEspeciales input:hover{
     background: $azulEspecial;
-    color: white(25, 24, 24);
+    background: map-get($colores, AzulBotones);
   }
 
 
@@ -154,9 +150,17 @@
 /* HOME: Seccion de productos: Tarjetas de productos */
 
 .tarjetaMIA:hover {
-    background: white;
+    background: map-get($colores, primary);
     box-shadow: 0 0 10px #111111, 0 0 40px;
 }
+
+.tarjetaMIA--OFERT {
+    @extend .tarjetaMIA:hover;
+    color: map-get($colores, AzulBotones);
+}
+
+
+
 
 .claseBotonTarjeta button {
     border-color: black;
@@ -167,13 +171,15 @@
     color: white;
 }
 
+
+
 /* HOME: Seccion de productos: Barras horizontales */
 
 .enviosContainer{
     display: flex;
     width: 100%;
     height: 115px;
-    background-color: rgb(42, 41, 41);
+    background: map-get($colores, secondary);
     justify-content: center;
     align-items: center;
 }
@@ -185,7 +191,7 @@
 
 .enviosContainer h3 span {
     font-weight: bold;
-    color: $azulEspecial;
+    color: map-get($colores, AzulBotones);
 }
 
 
@@ -211,7 +217,7 @@
 footer{
     display: flex;
     flex-direction: column;
-    background-color:  rgb(42, 41, 41);
+    background: map-get($colores, secondary);
     height: 40vh;
     width: 100%;
     color: white;
@@ -235,7 +241,7 @@ footer .footerText {
     text-align: center;
     align-items: center;
     letter-spacing: 1px;
-    background-color: rgb(42, 41, 41);
+    background: map-get($colores, secondary);
 }
 
 .newsletter {
