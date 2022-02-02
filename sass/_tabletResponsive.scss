@@ -97,17 +97,25 @@
     /* PRODCUTOS*/
 
     .menuProductos{
-        height: 2500px;
+        height: auto;
     }
 
     /* CONTAINER TEXTO NOSOTROS*/
 
     .menuNosotros {
-        height: 1600px;
+        height: 2300px;
     }
-    .textoMenuContainer{
-        height: 400px;
-    }
+    
+    .textoMenuContainerNosotros{
+        height: 600px;
+        gap: 35px;
+     }
+     
+     .texto-menuNosotros{
+         padding-top: 15px;
+         height: 450px;
+         gap: 25px;
+     }
 
     .containerInfoNosotros {
         display: flex;

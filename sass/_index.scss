@@ -216,7 +216,7 @@
 footer{
     display: flex;
     flex-direction: column;
-    background: map-get($colores, secondary);
+    background-color: rgb(35, 35, 35);
     height: 40vh;
     width: 100%;
     color: white;
@@ -240,7 +240,7 @@ footer .footerText {
     text-align: center;
     align-items: center;
     letter-spacing: 1px;
-    background: map-get($colores, secondary);
+    background-color: rgb(35, 35, 35);
 }
 
 .newsletter {

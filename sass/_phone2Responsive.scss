@@ -158,12 +158,22 @@
     /* NOSOTROS*/
 
     .menuNosotros{
-        height: 3050px;
+        height: 3700px;
     }
 
-    .textoMenuContainer {
-        height: 700px;
-    }
+    .textoMenuContainerNosotros{
+        flex-direction: column;
+        height: 920px;
+        gap: 20px;
+        justify-content: center;
+     }
+     
+     .texto-menuNosotros{
+        justify-content: start;
+         height: 400px;
+         width: 85%;
+         gap: 25px;
+     }
 
     .containerInfoNosotros {
         display: flex;

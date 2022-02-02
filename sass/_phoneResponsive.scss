@@ -145,16 +145,33 @@
     
     /* CONTAINER TEXTO NOSOTROS*/
     .menuNosotros{
-        height: 2400px;
+        height: 2900px;
     }
 
-    .textoMenuContainer {
+    .textoMenuContainerNosotros{
+        flex-direction: column;
         height: 700px;
+        gap: 10px;
+        justify-content: center;
+     }
+     
+     .texto-menuNosotros{
+         padding-top: 150px;
+        justify-content: start;
+         height: 300px;
+         width: 85%;
+         gap: 25px;
+         padding-top: 50px;
+     }
+
+     .texto-menuNosotros h3{
+        justify-content: center;
+        font-weight: bold;
     }
 
     .containerInfoNosotros {
         display: flex;
-        height: 900px;
+        height: 700px;
     }
     
     .containerInfoInsideNosotros {
