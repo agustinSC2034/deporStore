@@ -1,0 +1,17 @@
+@import "variables";
+
+/* CARRITO */
+.menuCarrito{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.carritoClass{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#borrar{
+    display: none;
+}

@@ -2,31 +2,33 @@
 
 /*CATEGORIAS Y MARCAS: Fondo banner*/
 .fondoNba {
-    display: flex;
-    width: 100%;
-    height: 50vh;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: url(../img/blackkkkkk.png);
-    background-color: rgba(45, 45, 45, 0.7);
-    background-blend-mode: soft-light;    
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include fondo;
+    background: url(../img/bannerBasquet.jpg);
+}
+
+.fondoFutbol {
+    @include fondo;
+    background: url(../img/bannerFutbol4.jpg);
+}
+
+.fondoZapatillas {
+    @include fondo;
+    background: url(../img/bannerCalzado2.jpg);
 }
 
 .fondoNike {
-    display: flex;
-    width: 100%;
-    height: 50vh;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: url(../img/air-jordan-1-royal-toe-wallpaper-4k.jpg);
-    background-color: rgba(45, 45, 45, 0.7);
-    background-blend-mode: soft-light;    
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include fondo;
+    background: url(../img/bannerNike.jpg);
+}
+
+.fondoPuma {
+    @include fondo;
+    background: url(../img/bannerPuma2.jpg);
+}
+
+.fondoAdidas {
+    @include fondo;
+    background: url(../img/bannerAdidas3.jpg);
 }
 
 /*CATEGORIAS Y MARCAS: Menu de productos*/
@@ -35,7 +37,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 1800px;
+    height: auto;
     padding-top: 50px;
 }
 

@@ -1,11 +1,9 @@
 @import "variables";
 
 /* CONTACTO */
-.menu {
+.menuContacto{
+    height: auto;
     width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
 }
 
 .textoContacto{      
@@ -21,6 +19,7 @@
     font-size: 25px;
     color: #333;
     letter-spacing: 1px;
+    font-weight: bold;
     
 }
 
@@ -28,11 +27,6 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.menuContacto{
-    height: 800px;
-    width: 100%;
 }
 
 .containerContact {

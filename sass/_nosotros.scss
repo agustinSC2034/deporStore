@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 2300px;
+    height: auto;
 }
 .textoMenuContainerNosotros{
    display: flex;
@@ -119,10 +119,6 @@
     height: auto;
 }
 
-.imagenesMarcas .img1:hover{
-    /* agregar */
-}
-
 .redesSocialesContainer{
     display: flex;
     justify-content: center;
@@ -132,7 +128,7 @@
 }
 
 .redesSocialesContainer .containerSocial {
-    display: flex;
+    display: none;
     width: 80%;
     justify-content: center;
     align-items: center;
@@ -143,7 +139,7 @@
 }
 
 .redesSocialesContainerInside{
-    display: flex;
+    display: none;
     height: 190px;
     width: 80%;
     justify-content: center;
@@ -152,7 +148,7 @@
 }
 
 .logoSocial{
-    display: flex;
+    display: none;
     width: 200px;
     height: 200px;
     justify-content: center;
@@ -160,7 +156,7 @@
 }
 
 .logoSocial img{
-    display: flex;
+    display: none;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -52,26 +52,6 @@
     animation-duration: 1s;
     font-size: 25px;
  }
-
- @mixin btnHome {
-    display: flex;
-    width: 100%;
-    height: 40px;
-    padding-top: 40px;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    letter-spacing: 1px;
- }
-
- @mixin inputHome {
-    height: 50px;
-    width: 170px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 1px;
- }
  
  .botonesHome {
    @include btnHome;
@@ -107,7 +87,7 @@
 
 .menuIndex {
     width: 100%;
-    height: 2200px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -228,6 +208,8 @@ footer{
 footer .footerText {
     letter-spacing: 1px;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* HOME: Footer: Newsletter */
@@ -278,3 +260,28 @@ footer .footerText {
     border-left: none;
     letter-spacing: 1px;
 }
+
+.shopping-cart-items {
+    padding: 20px 0px;
+  }
+  
+  .shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+  }
+  
+  .shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+  }
+  
+  .shopping-cart-total {
+    min-height: 96px;
+  }

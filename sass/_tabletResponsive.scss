@@ -1,14 +1,14 @@
 @import "variables";
 
 /* Media queries TABLET*/
-@media (min-width: 768px) and (max-width: 1124px) {
+@media (min-width: 768px) and (max-width: 1200px) {
 
     .carousel-inner img {
         height: 70vh;
     }
 
     .menuIndex{
-        height: 2200px;
+        height: auto;
         display: flex;
     }
 
@@ -100,10 +100,24 @@
         height: auto;
     }
 
+    .fondoResponsive{
+        @include fondoResponsive;
+        height: 23vh;
+        justify-content:space-between;
+        padding-right: 110%;
+    }
+
+    .fondoResponsive2{
+        @include fondoResponsive;
+        height: 23vh;
+        justify-content:space-between;
+        padding-right: 100%;
+    }
+
     /* CONTAINER TEXTO NOSOTROS*/
 
     .menuNosotros {
-        height: 2300px;
+        height: auto;
     }
     
     .textoMenuContainerNosotros{
@@ -134,27 +148,6 @@
         flex-direction: column;
         gap: 15px;
     }
-
-    /* CONTAINER REDES SOCIALES*/
-    .redesSocialesContainerInside{
-        flex-direction: row;
-        gap:10%;
-    }
-    
-    .redesSocialesTitulo h1{
-        margin-top: 17%;
-        font-size: 20px;
-    }
-    
-    .logoSocial{
-        width: 40%;
-        height: auto;
-    }
-    
-    .logoSocial img{
-        height: 100%;
-        width: 100%;
-    }
     
     
     /* CONTACTO */
@@ -164,7 +157,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        height: 750px;
+        height: auto;
         gap: 50px;
     }
     .textoContacto h3{
@@ -211,4 +204,7 @@
     footer{
         height: 200px;
     }
+
+    /* CARRITO */
+    
 }

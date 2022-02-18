@@ -20,19 +20,35 @@
         text-align: center;
     }
 
+    .carousel-caption h1{
+        font-size: 50px;
+    }
+
     .carousel-caption h5{
         display: none;
+    }
+
+    .botonesHome a input{
+        height: 40px;
+        width: 120px;
+        font-size: 13px;
+    }
+
+    .botonesHomeEspeciales a input{
+        height: 40px;
+        width: 120px;
+        font-size: 13px;
     }
 
     /* MENU INDEX*/
     .menuIndex {
         width: 100%;
-        height: 3700px;
+        height: auto;
     }
 
     .textoMenuContainer {
-        height: 1500px;
-        display: none;
+        display: flex;
+        height: 80px;
     }
 
     .texto-menu {
@@ -58,12 +74,6 @@
         color: #333;
         letter-spacing: 1px;
     }
-    
-    /*
-    .botonesHome input {
-        // Editar
-    }
-    */
 
     .titulo h3{
         font-size: 38px;
@@ -83,6 +93,12 @@
 
     .texto-menu p{
         font-size: 18px;
+    }
+
+    /*BARRA INFO*/
+    .enviosContainer h3{
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     /* CONTAINER DE PAGOS*/
@@ -150,15 +166,28 @@
         display: none;
     }
 
+    /*PRODUCTOS */
+
     .menuProductos{
-        height: 2900px;
+        height: auto;
     }
 
+    .fondoResponsive{
+        @include fondoResponsive;
+        height: 20vh;
+        justify-content:space-between;
+        padding-right: 260%;
+    }
+
+    .fondoResponsive2{
+        @include fondoResponsive;
+        height: 20vh;
+    }
 
     /* NOSOTROS*/
 
     .menuNosotros{
-        height: 3700px;
+        height: auto;
     }
 
     .textoMenuContainerNosotros{
@@ -190,28 +219,6 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
-    }
-
-    /* CONTAINER REDES SOCIALES*/
-
-    .containerSocial{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .containerSocial h1{
-        font-size: 25px;
-        text-align: center;
-    }
-
-    .redesSocialesContainerInside{
-        flex-direction: row;
-        gap:10%;
-    }
-
-    .redesSocialesContainerInside img{
-        height: 90px;
-        width: 90px;
     }
 
     /* CONTACTO */

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*COLORES DE LA PAGINA*/
+/*VARIABLES*/
 * {
   padding: 0;
   margin: 0;
@@ -11,7 +11,7 @@
 }
 
 /* Paginas */
-/*COLORES DE LA PAGINA*/
+/*VARIABLES*/
 /* HOME: Sección NAV + FONDO */
 .navMIO {
   letter-spacing: 1px;
@@ -147,7 +147,7 @@
 /* HOME: Seccion de ofertas*/
 .menuIndex {
   width: 100%;
-  height: 2200px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,6 +304,13 @@ footer {
 footer .footerText {
   letter-spacing: 1px;
   margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* HOME: Footer: Newsletter */
@@ -372,25 +379,88 @@ footer .footerText {
   letter-spacing: 1px;
 }
 
-/*COLORES DE LA PAGINA*/
+.shopping-cart-items {
+  padding: 20px 0px;
+}
+
+.shopping-cart-header {
+  border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-image {
+  max-width: 80px;
+  border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px;
+}
+
+.shopping-cart-total {
+  min-height: 96px;
+}
+
+/*VARIABLES*/
 /*CATEGORIAS Y MARCAS: Fondo banner*/
 .fondoNba {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url(../img/blackkkkkk.png);
   background-color: rgba(45, 45, 45, 0.7);
   background-blend-mode: soft-light;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background: url(../img/bannerBasquet.jpg);
+}
+
+.fondoFutbol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(45, 45, 45, 0.7);
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url(../img/bannerFutbol4.jpg);
+}
+
+.fondoZapatillas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(45, 45, 45, 0.7);
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url(../img/bannerCalzado2.jpg);
 }
 
 .fondoNike {
@@ -398,18 +468,56 @@ footer .footerText {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url(../img/air-jordan-1-royal-toe-wallpaper-4k.jpg);
   background-color: rgba(45, 45, 45, 0.7);
   background-blend-mode: soft-light;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background: url(../img/bannerNike.jpg);
+}
+
+.fondoPuma {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(45, 45, 45, 0.7);
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url(../img/bannerPuma2.jpg);
+}
+
+.fondoAdidas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(45, 45, 45, 0.7);
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url(../img/bannerAdidas3.jpg);
 }
 
 /*CATEGORIAS Y MARCAS: Menu de productos*/
@@ -422,7 +530,7 @@ footer .footerText {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 1800px;
+  height: auto;
   padding-top: 50px;
 }
 
@@ -508,7 +616,7 @@ footer .footerText {
   letter-spacing: 0.5px;
 }
 
-/*COLORES DE LA PAGINA*/
+/*VARIABLES*/
 /* NOSOTROS */
 .fondoNosotros {
   display: -webkit-box;
@@ -537,7 +645,7 @@ footer .footerText {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 2300px;
+  height: auto;
 }
 
 .textoMenuContainerNosotros {
@@ -694,10 +802,6 @@ footer .footerText {
   height: auto;
 }
 
-.imagenesMarcas .img1:hover {
-  /* agregar */
-}
-
 .redesSocialesContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -713,9 +817,7 @@ footer .footerText {
 }
 
 .redesSocialesContainer .containerSocial {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   width: 80%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -729,9 +831,7 @@ footer .footerText {
 }
 
 .redesSocialesContainerInside {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   height: 190px;
   width: 80%;
   -webkit-box-pack: center;
@@ -744,9 +844,7 @@ footer .footerText {
 }
 
 .logoSocial {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   width: 200px;
   height: 200px;
   -webkit-box-pack: center;
@@ -758,9 +856,7 @@ footer .footerText {
 }
 
 .logoSocial img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -769,18 +865,11 @@ footer .footerText {
   width: 120px;
 }
 
-/*COLORES DE LA PAGINA*/
+/*VARIABLES*/
 /* CONTACTO */
-.menu {
+.menuContacto {
+  height: auto;
   width: 100%;
-  height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .textoContacto {
@@ -803,6 +892,7 @@ footer .footerText {
   font-size: 25px;
   color: #333;
   letter-spacing: 1px;
+  font-weight: bold;
 }
 
 form {
@@ -815,11 +905,6 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.menuContacto {
-  height: 800px;
-  width: 100%;
 }
 
 .containerContact {
@@ -909,15 +994,37 @@ form {
   background-color: #2a9ee6;
 }
 
+/*VARIABLES*/
+/* CARRITO */
+.menuCarrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+}
+
+.carritoClass {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#borrar {
+  display: none;
+}
+
 /* Responsive TABLET*/
-/*COLORES DE LA PAGINA*/
+/*VARIABLES*/
 /* Media queries TABLET*/
-@media (min-width: 768px) and (max-width: 1124px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .carousel-inner img {
     height: 70vh;
   }
   .menuIndex {
-    height: 2200px;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1002,9 +1109,43 @@ form {
   .menuProductos {
     height: auto;
   }
+  .fondoResponsive {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 23vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 110%;
+  }
+  .fondoResponsive2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 23vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 100%;
+  }
   /* CONTAINER TEXTO NOSOTROS*/
   .menuNosotros {
-    height: 2300px;
+    height: auto;
   }
   .textoMenuContainerNosotros {
     height: 600px;
@@ -1041,26 +1182,6 @@ form {
             flex-direction: column;
     gap: 15px;
   }
-  /* CONTAINER REDES SOCIALES*/
-  .redesSocialesContainerInside {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 10%;
-  }
-  .redesSocialesTitulo h1 {
-    margin-top: 17%;
-    font-size: 20px;
-  }
-  .logoSocial {
-    width: 40%;
-    height: auto;
-  }
-  .logoSocial img {
-    height: 100%;
-    width: 100%;
-  }
   /* CONTACTO */
   .menuContacto {
     display: -webkit-box;
@@ -1076,7 +1197,7 @@ form {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    height: 750px;
+    height: auto;
     gap: 50px;
   }
   .textoContacto h3 {
@@ -1116,10 +1237,11 @@ form {
   footer {
     height: 200px;
   }
+  /* CARRITO */
 }
 
 /* Responsive phone grande*/
-/*COLORES DE LA PAGINA*/
+/*VARIABLES*/
 /*MEDIA: CELULAR GRANDE*/
 @media (min-width: 590px) and (max-width: 768px) {
   /* NAV GENERAL*/
@@ -1145,7 +1267,7 @@ form {
   }
   .menuIndex {
     width: 100%;
-    height: 3350px;
+    height: auto;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
@@ -1154,7 +1276,10 @@ form {
     display: flex;
   }
   .textoMenuContainer {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
   }
   .texto-menu {
     display: -webkit-box;
@@ -1256,11 +1381,44 @@ form {
   }
   /* PRODUCTOS */
   .menuProductos {
-    height: 3000px;
+    height: auto;
   }
-  /* CONTAINER TEXTO NOSOTROS*/
+  .fondoResponsive {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 210%;
+  }
+  .fondoResponsive2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  /* NOSOTROS*/
   .menuNosotros {
-    height: 2900px;
+    height: auto;
   }
   .textoMenuContainerNosotros {
     -webkit-box-orient: vertical;
@@ -1315,41 +1473,6 @@ form {
             flex-direction: column;
     gap: 15px;
   }
-  /* CONTAINER REDES SOCIALES*/
-  .redesSocialesContainer {
-    height: 400px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .containerSocial {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .containerSocial h1 {
-    font-size: 25px;
-    text-align: center;
-  }
-  .redesSocialesContainerInside {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 10%;
-  }
-  .redesSocialesContainerInside img {
-    height: 120px;
-    width: 120px;
-  }
   /* CONTACTO */
   .containerContact {
     height: auto;
@@ -1377,7 +1500,7 @@ form {
 }
 
 /* Responsive phone chico*/
-/*COLORES DE LA PAGINA*/
+/*VARIABLES*/
 @media (min-width: 0px) and (max-width: 600px) {
   /* NAV GENERAL*/
   .carousel-inner img {
@@ -1394,17 +1517,32 @@ form {
     color: #fff;
     text-align: center;
   }
+  .carousel-caption h1 {
+    font-size: 50px;
+  }
   .carousel-caption h5 {
     display: none;
+  }
+  .botonesHome a input {
+    height: 40px;
+    width: 120px;
+    font-size: 13px;
+  }
+  .botonesHomeEspeciales a input {
+    height: 40px;
+    width: 120px;
+    font-size: 13px;
   }
   /* MENU INDEX*/
   .menuIndex {
     width: 100%;
-    height: 3700px;
+    height: auto;
   }
   .textoMenuContainer {
-    height: 1500px;
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
   }
   .texto-menu {
     display: -webkit-box;
@@ -1437,11 +1575,6 @@ form {
     color: #333;
     letter-spacing: 1px;
   }
-  /*
-    .botonesHome input {
-        // Editar
-    }
-    */
   .titulo h3 {
     font-size: 38px;
   }
@@ -1456,6 +1589,11 @@ form {
   }
   .texto-menu p {
     font-size: 18px;
+  }
+  /*BARRA INFO*/
+  .enviosContainer h3 {
+    padding-left: 15px;
+    padding-right: 15px;
   }
   /* CONTAINER DE PAGOS*/
   .containerPagosYoPadre {
@@ -1524,12 +1662,43 @@ form {
   .containerInfo {
     display: none;
   }
+  /*PRODUCTOS */
   .menuProductos {
-    height: 2900px;
+    height: auto;
+  }
+  .fondoResponsive {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 260%;
+  }
+  .fondoResponsive2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
   }
   /* NOSOTROS*/
   .menuNosotros {
-    height: 3700px;
+    height: auto;
   }
   .textoMenuContainerNosotros {
     -webkit-box-orient: vertical;
@@ -1575,31 +1744,6 @@ form {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 15px;
-  }
-  /* CONTAINER REDES SOCIALES*/
-  .containerSocial {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .containerSocial h1 {
-    font-size: 25px;
-    text-align: center;
-  }
-  .redesSocialesContainerInside {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 10%;
-  }
-  .redesSocialesContainerInside img {
-    height: 90px;
-    width: 90px;
   }
   /* CONTACTO */
   .containerContact {
